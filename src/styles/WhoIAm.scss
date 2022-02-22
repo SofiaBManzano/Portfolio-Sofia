@@ -1,0 +1,52 @@
+.me {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 70px;
+  box-sizing: border-box;
+  width: 500px;
+  //   background-color: aqua;
+
+  &__name {
+    font-family: "monument-extended-regular", sans-serif;
+    font-size: 80px;
+    line-height: 90px;
+    background-color: transparent;
+    &--myName {
+      font-family: "monument-extended-regular", sans-serif;
+      color: rgb(0, 0, 0);
+      -webkit-text-stroke-width: 0.1px;
+      letter-spacing: 4px;
+      -webkit-text-stroke-color: rgb(255, 255, 255);
+    }
+  }
+
+  &__positions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &--job {
+      line-height: 20px;
+      list-style: none;
+      font-family: "monument-extended-regular", sans-serif;
+      font-size: 12px;
+    }
+  }
+}
+.whoIAm {
+  //   background-color: rgb(255, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+
+  &__text {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: transparent;
+    width: 40%;
+    margin-right: 50px;
+    color: rgb(148, 147, 147);
+  }
+}

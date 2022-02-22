@@ -1,0 +1,7 @@
+.selectedWorks {
+  &__container {
+    &--li .li__img {
+      filter: contrast(160%) grayscale(100%);
+    }
+  }
+}
