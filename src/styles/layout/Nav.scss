@@ -10,13 +10,12 @@
     top: 0px;
     right: 0px;
     z-index: 999;
-    background-color: transparent;
 
     &--title {
       margin: 20px;
-      font-family: "monument-extended-regular", sans-serif;
+      font-family: $titles-font-family-regular;
       background-color: transparent;
-      text-shadow: 2px 0 0 black;
+      text-shadow: 2px 0 0 $black;
       cursor: pointer;
     }
   }

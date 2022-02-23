@@ -1,3 +1,8 @@
+@import "../styles/core/Reset.scss";
+@import "../styles/core/Variables.scss";
+@import "../styles/layout/Nav.scss";
+@import "../styles/layout/Selected-works.scss";
+@import "../styles/layout/WhoIAm.scss";
 @font-face {
   font-family: "monument-extended-bold";
   src: url("../fonts/MonumentExtended-Ultrabold.otf") format("truetype");
@@ -6,13 +11,8 @@
   font-family: "monument-extended-regular";
   src: url("../fonts/MonumentExtended-Regular.otf") format("truetype");
 }
-* {
-  //   font-family: "monument-extended-bold", sans-serif;
-  font-family: "Roboto Condensed", sans-serif;
-  background-color: black;
+
+.body {
   color: white;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+  background-color: black;
 }

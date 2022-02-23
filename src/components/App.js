@@ -8,7 +8,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 function App() {
   return (
-    <div>
+    <div className="body">
       <header>
         <Nav />
         <WhoIAm />

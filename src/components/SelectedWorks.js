@@ -3,7 +3,7 @@ import harryPotter from "../images/harry-potter.jpg";
 import hangman from "../images/ahorcado.jpg";
 import otaku from "../images/otaku-search.jpg";
 import superPop from "../images/super-pop.jpg";
-import "../styles/Selected-works.scss";
+// import "../styles/Selected-works.scss";
 
 const SelectedWorks = () => {
   return (

@@ -1,4 +1,4 @@
-import "../styles/WhoIAm.scss";
+// import "../styles/WhoIAm.scss";
 const WhoIAm = () => {
   return (
     <>

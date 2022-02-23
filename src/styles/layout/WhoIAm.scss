@@ -9,16 +9,16 @@
   //   background-color: aqua;
 
   &__name {
-    font-family: "monument-extended-regular", sans-serif;
+    font-family: $titles-font-family-regular;
     font-size: 80px;
     line-height: 90px;
-    background-color: transparent;
+
     &--myName {
-      font-family: "monument-extended-regular", sans-serif;
-      color: rgb(0, 0, 0);
+      font-family: $titles-font-family-regular;
+      color: $black;
       -webkit-text-stroke-width: 0.1px;
       letter-spacing: 4px;
-      -webkit-text-stroke-color: rgb(255, 255, 255);
+      -webkit-text-stroke-color: $white;
     }
   }
 
@@ -30,7 +30,7 @@
     &--job {
       line-height: 20px;
       list-style: none;
-      font-family: "monument-extended-regular", sans-serif;
+      font-family: $console-font;
       font-size: 12px;
     }
   }
@@ -47,6 +47,6 @@
     background-color: transparent;
     width: 40%;
     margin-right: 50px;
-    color: rgb(148, 147, 147);
+    color: $gray;
   }
 }
