@@ -1,9 +1,14 @@
 const Contact = () => {
   return (
-    <section>
-      <p>If you think that a junior profile like mine can fit you,</p>
-      <p>
-        <a href="mailto:sofiabmanzano@gmail.com?subject=Let's Talk">
+    <section className="contact" id="contact">
+      <p className="contact__text">
+        If you think that a junior profile like mine can fit you,
+      </p>
+      <p className="contact__text--talk ">
+        <a
+          className="contact__text--talk link hover-underline-animation"
+          href="mailto:sofiabmanzano@gmail.com?subject=Let's Talk"
+        >
           let's talk
         </a>
       </p>

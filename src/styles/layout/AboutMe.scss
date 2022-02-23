@@ -1,0 +1,12 @@
+.aboutMe {
+  padding: 20px;
+  &__title {
+    font-size: 25px;
+    font-family: $titles-font-family-regular;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__text {
+    font-family: $text-font;
+  }
+}

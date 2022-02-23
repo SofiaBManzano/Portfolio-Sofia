@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-family: $titles-font-family-regular;
+
+  &__rrss {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    &--li {
+      font-size: 10px;
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  &__extra {
+    padding: 20px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--text {
+      font-size: 10px;
+      color: $black;
+      .link {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+}

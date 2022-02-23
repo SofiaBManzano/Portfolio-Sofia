@@ -3,16 +3,16 @@ import harryPotter from "../images/harry-potter.jpg";
 import hangman from "../images/ahorcado.jpg";
 import otaku from "../images/otaku-search.jpg";
 import superPop from "../images/super-pop.jpg";
-// import "../styles/Selected-works.scss";
 
 const SelectedWorks = () => {
   return (
-    <section className="selectedWorks">
+    <section className="selectedWorks" id="work">
+      {/* Aqui mas adelante haré un hover en la imagen donde pasando el ratón por encima se verá la description */}
       <h2 className="selectedWorks__title">selected works</h2>
       <ul className="selectedWorks__container">
         <li className="selectedWorks__container--li">
-          <h3>Anonymus Proxy</h3>
-          <p>
+          <h3 className="selectedWorks__container--li title">Anonymus Proxy</h3>
+          <p className="selectedWorks__container--li description">
             //This is my first "hello world", that is, my first responsive
             website and my first approach to web layout. Made entirely with HTML
             and Sass.
@@ -29,8 +29,10 @@ const SelectedWorks = () => {
           </a>
         </li>
         <li className="selectedWorks__container--li">
-          <h3>Harry Potter Character Finder</h3>
-          <p>
+          <h3 className="selectedWorks__container--li title">
+            Harry Potter Character Finder
+          </h3>
+          <p className="selectedWorks__container--li description">
             //Responsive search engine for Harry Potter characters developed in
             React using an external API.
           </p>
@@ -46,8 +48,8 @@ const SelectedWorks = () => {
           </a>
         </li>
         <li className="selectedWorks__container--li">
-          <h3>Hangman Game</h3>
-          <p>
+          <h3 className="selectedWorks__container--li title">Hangman Game</h3>
+          <p className="selectedWorks__container--li description">
             //The mythical game that we have all played in class hidden from the
             teacher, made with React and with a lot of love
           </p>
@@ -63,8 +65,8 @@ const SelectedWorks = () => {
           </a>
         </li>
         <li className="selectedWorks__container--li">
-          <h3>Otaku search</h3>
-          <p>
+          <h3 className="selectedWorks__container--li title">Otaku search</h3>
+          <p className="selectedWorks__container--li description">
             //Responsive anime series search engine developed in vanilla
             javascript using an external API.
           </p>
@@ -80,8 +82,8 @@ const SelectedWorks = () => {
           </a>
         </li>
         <li className="selectedWorks__container--li">
-          <h3>Super Pop!</h3>
-          <p>
+          <h3 className="selectedWorks__container--li title">Super Pop!</h3>
+          <p className="selectedWorks__container--li description">
             //Group project. Responsive interactive website for creating cards.
             Made with javascript, HTML, Sass, Local Storage.
           </p>

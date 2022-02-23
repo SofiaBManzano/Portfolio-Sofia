@@ -1,0 +1,42 @@
+.contact {
+  padding: 20px;
+  padding-bottom: 50px;
+  &__text {
+    font-family: $titles-font-family-regular;
+    font-size: 40px;
+
+    &--talk {
+      // text-align: center;
+      font-family: $titles-font-family-regular;
+      font-size: 52px;
+      padding-top: 30px;
+      // padding-bottom: 40px;
+      .link {
+        display: inline-block;
+        color: $gray;
+        text-decoration: none;
+      }
+      .hover-underline-animation {
+        position: relative;
+        color: $gray;
+      }
+      .hover-underline-animation:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 5px;
+        bottom: 0;
+        left: 0;
+        background-color: $gray;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        // padding-bottom: 40px;
+      }
+      .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
+}
