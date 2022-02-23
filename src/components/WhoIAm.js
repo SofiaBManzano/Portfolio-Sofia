@@ -7,7 +7,7 @@ const WhoIAm = () => {
         <h2 className="me__name">
           I am <span className="me__name--myName">Sofía</span>
         </h2>
-
+        <i class="fa-solid fa-code-branch"></i>
         <ul className="me__positions">
           <li className="me__positions--job">Frontend developer</li>
           <li className="me__positions--job">Motion grapher</li>
