@@ -1,7 +1,9 @@
+import profilePhoto from "../images/sofia.jpg";
 const AboutMe = () => {
   return (
     <section className="aboutMe" id="aboutMe">
-      <h1 className="aboutMe__title">Who am I?</h1>
+      <h1 className="aboutMe__title">Who am I?</h1>{" "}
+      <img className="aboutMe__img" src={profilePhoto} alt="Sofía Blas" />
       <p className="aboutMe__text">
         I'm a junior front-end developer with a broad background in video
         editing and post-production. For 4 years I was working in a small

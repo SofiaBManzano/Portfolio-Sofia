@@ -1,5 +1,14 @@
 .aboutMe {
   padding: 20px;
+  &__img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: contrast(120%) grayscale(100%);
+    width: 90%;
+  }
   &__title {
     font-size: 25px;
     font-family: $titles-font-family-regular;

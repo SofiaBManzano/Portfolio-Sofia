@@ -6,6 +6,12 @@
   width: 100%;
   padding: 20px;
   // background-color: aqua;
+  @include tablet {
+    justify-content: center;
+  }
+  @include desktop {
+    justify-content: flex-end;
+  }
 }
 .icon {
   color: white;
@@ -22,6 +28,13 @@
     font-family: $titles-font-family-regular;
     font-size: 70px;
     line-height: 90px;
+    @include tablet {
+      padding-left: 50px;
+    }
+    @include desktop {
+      font-size: 90px;
+      padding-bottom: 30px;
+    }
 
     &--myName {
       font-family: $titles-font-family-regular;
@@ -31,16 +44,37 @@
       -webkit-text-stroke-color: $white;
     }
   }
+  &__containerJobs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    @include tablet {
+      justify-content: flex-end;
+      padding-right: 150px;
+    }
+    @include desktop {
+      justify-content: center;
+    }
 
+    &--icon {
+      font-size: 60px;
+      padding-right: 10px;
+    }
+  }
   &__positions {
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
 
     &--job {
       line-height: 20px;
       list-style: none;
       font-family: $titles-font-family-regular;
       font-size: 12px;
+      @include desktop {
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
 }
@@ -52,12 +86,21 @@
   padding-bottom: 30px;
   width: 100%;
   margin-top: 80px;
-
+  margin-bottom: 20px;
+  @include tablet {
+    margin-top: 100px;
+  }
   &__text {
     font-family: $console-font;
     background-color: transparent;
     font-size: 13px;
     // margin-right: 50px;
     color: $gray;
+    @include tablet {
+      font-size: 15px;
+    }
+    @include desktop {
+      padding-right: 50px;
+    }
   }
 }

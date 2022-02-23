@@ -12,6 +12,12 @@
     z-index: 999;
     position: fixed;
     background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
+    @include tablet {
+      // background-color: aqua;
+      justify-content: flex-end;
+      padding-right: 50px;
+      padding-top: 20px;
+    }
 
     &--title {
       margin: 10px;

@@ -7,12 +7,14 @@ const WhoIAm = () => {
         <h2 className="me__name">
           I am <span className="me__name--myName">Sofía</span>
         </h2>
-        <i class="fa-solid fa-code-branch"></i>
-        <ul className="me__positions">
-          <li className="me__positions--job">Frontend developer</li>
-          <li className="me__positions--job">Motion grapher</li>
-          <li className="me__positions--job">Video editor</li>
-        </ul>
+        <div className="me__containerJobs">
+          <span className="fas fa-light fa-code-branch me__containerJobs--icon"></span>
+          <ul className="me__positions">
+            <li className="me__positions--job">Frontend developer</li>
+            <li className="me__positions--job">Motion grapher</li>
+            <li className="me__positions--job">Video editor</li>
+          </ul>
+        </div>
       </section>
 
       <section className="whoIAm">
