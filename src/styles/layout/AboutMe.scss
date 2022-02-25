@@ -1,21 +1,54 @@
 .aboutMe {
   padding: 20px;
-  &__img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    filter: contrast(120%) grayscale(100%);
-    width: 90%;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    &--text {
+      padding-top: 10px;
+      font-family: $text-font;
+      text-align: justify;
+      @include tablet {
+        text-align: left;
+        width: 490px;
+      }
+    }
+    &--img {
+      margin-right: 30px;
+      width: 200px;
+      height: 100px;
+      background-image: url("../../images/sofia.jpg");
+      background-size: cover;
+      background-position: center top;
+      margin-bottom: 15px;
+      display: block;
+      filter: contrast(120%) grayscale(100%);
+      @include tablet {
+        width: 200px;
+        height: 200px;
+        background-image: url("../../images/sofia-1-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      // @include desktop {
+      //   width: 20%;
+      // }
+    }
   }
+
   &__title {
     font-size: 25px;
     font-family: $titles-font-family-regular;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-  &__text {
-    font-family: $text-font;
   }
 }
