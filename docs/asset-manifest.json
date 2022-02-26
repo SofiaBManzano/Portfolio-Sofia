@@ -1,12 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.31d6cfe0.css",
-    "main.js": "./static/js/main.438b7aa7.js",
+    "main.css": "./static/css/main.632ab220.css",
+    "main.js": "./static/js/main.86140b16.js",
+    "static/media/sofia.jpg": "./static/media/sofia.cdb69e965a0125905d5d.jpg",
+    "static/media/otaku-search.jpg": "./static/media/otaku-search.a8460beff112c1bd7d3d.jpg",
+    "static/media/sofia-1-1.jpg": "./static/media/sofia-1-1.9dd86a730c2697e3043d.jpg",
+    "static/media/anonymus-proxy.jpg": "./static/media/anonymus-proxy.d0092b2f1492f316ea01.jpg",
+    "static/media/harry-potter.jpg": "./static/media/harry-potter.6fa20bbe118589187102.jpg",
+    "static/media/super-pop.jpg": "./static/media/super-pop.cb7a5adcb2d80545b534.jpg",
+    "static/media/ahorcado.jpg": "./static/media/ahorcado.40efd429babe8d21f87d.jpg",
+    "static/media/MonumentExtended-Regular.otf": "./static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
+    "static/media/MonumentExtended-Ultrabold.otf": "./static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
     "index.html": "./index.html",
-    "main.438b7aa7.js.map": "./static/js/main.438b7aa7.js.map"
+    "main.632ab220.css.map": "./static/css/main.632ab220.css.map",
+    "main.86140b16.js.map": "./static/js/main.86140b16.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.438b7aa7.js"
+    "static/css/main.632ab220.css",
+    "static/js/main.86140b16.js"
   ]
 }
