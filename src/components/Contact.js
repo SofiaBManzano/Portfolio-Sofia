@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section className="contact" id="contact">
       <p className="contact__text">
-        If you think that a junior profile like mine can fit you,
+        If you think that a profile like mine can fit you,
       </p>
       <p className="contact__text--talk ">
         <a

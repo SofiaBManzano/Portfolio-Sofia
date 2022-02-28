@@ -50,8 +50,8 @@ const SelectedWorks = () => {
         <li className="selectedWorks__container--li">
           <h3 className="selectedWorks__container--li title">Hangman Game</h3>
           <p className="selectedWorks__container--li description">
-            //The mythical game that we have all played in class hidden from the
-            teacher, made with React and with a lot of love
+            //The well-known game that we have all played in class hiding from
+            the teacher, made with React and a lot of love.
           </p>
           <a
             target="blank"

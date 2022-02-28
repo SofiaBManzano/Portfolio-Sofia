@@ -1,5 +1,5 @@
 import "../styles/App.scss";
-
+import UnderConstruction from "./UnderConstruction";
 import Nav from "./Nav";
 import WhoIAm from "./WhoIAm";
 import SelectedWorks from "./SelectedWorks";
@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="body">
       <header>
+        <UnderConstruction />
         <Nav />
         <WhoIAm />
       </header>

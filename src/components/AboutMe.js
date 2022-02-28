@@ -6,18 +6,18 @@ const AboutMe = () => {
       <div className="aboutMe__container">
         <div className="aboutMe__container--img"></div>
         <p className="aboutMe__container--text one">
-          I'm a junior front-end developer with a broad background in video
+          I'm a junior front-end developer with an extense background in video
           editing and post-production. For 4 years I was working in a small
           audiovisual production company, taking care of the editing and
-          post-production of each piece, knowing how to adapt to tight times and
-          all kinds of clients. Even though it was not the IT world, it was also
-          a continuous movement where I knew how to adapt by learning other
-          technologies such as 4D design and motion graphics. I consider myself
-          a person with great adaptation to the needs of each project. In
-          addition, having worked as a freelancer has been very rewarding. I
-          have been able to work on projects that I was passionate about and
-          where I had more freedom to apply the creativity that characterizes
-          me.{" "}
+          post-production of each video, knowing how to adapt to tight deadlines
+          and all kinds of clients. Even though it was out of the IT world, it
+          was also a continuously changing sector where I had to adapt by
+          learning other technologies such as 3D design and motion graphics. I
+          consider myself a person with great adaptation to the needs of each
+          project. In addition, having worked as a freelancer has been very
+          rewarding. I have been able to work on projects that I was passionate
+          about and where I had more freedom to apply the creativity that
+          characterizes me.{" "}
         </p>
         {/* <p className="aboutMe__container--text two">
           I consider myself a person with great adaptation to the needs of each
@@ -27,12 +27,12 @@ const AboutMe = () => {
           characterizes me.{" "}
         </p> */}
         <p className="aboutMe__container--text three">
-          For me, everything related to design and art is a world that I am
+          For me, everything related to design and art is the world that I am
           passionate about.
         </p>{" "}
         <p className="aboutMe__container--text four">
-          In my free time I like to do analog photography, just as a hobby, my
-          "devil" side is finding the best taverns and bars to eat and drink in
+          In my free time I like to do analogue photography, just as a hobby, my
+          "evil" side is finding the best taverns and bars to eat and drink in
           Madrid. Have I already mentioned that I have also been a waitress?{" "}
         </p>
         <p className="aboutMe__container--text .one5">
