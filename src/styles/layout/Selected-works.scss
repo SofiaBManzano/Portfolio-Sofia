@@ -8,10 +8,23 @@
     font-family: $titles-font-family-regular;
   }
   &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    &--li {
+      @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    .right {
+      @include desktop {
+        align-items: flex-end;
+      }
+    }
     &--li .title {
       padding-top: 15px;
       padding-bottom: 10px;
@@ -22,6 +35,16 @@
       font-family: $console-font;
       font-size: 12px;
       color: $gray;
+      @include desktop {
+        font-size: 20px;
+      }
+    }
+    &--li .img-container {
+      @include desktop {
+        display: flex;
+
+        align-items: flex-end;
+      }
     }
     &--li .li__img {
       padding-top: 10px;
@@ -30,6 +53,9 @@
       margin-right: auto;
       filter: contrast(160%) grayscale(100%);
       width: 90%;
+      @include desktop {
+        margin: 0px;
+      }
     }
   }
 }

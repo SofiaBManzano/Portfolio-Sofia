@@ -10,7 +10,7 @@ const SelectedWorks = () => {
       {/* Aqui mas adelante haré un hover en la imagen donde pasando el ratón por encima se verá la description */}
       <h2 className="selectedWorks__title">selected works</h2>
       <ul className="selectedWorks__container">
-        <li className="selectedWorks__container--li">
+        <li className="selectedWorks__container--li right">
           <h3 className="selectedWorks__container--li title">Anonymus Proxy</h3>
           <p className="selectedWorks__container--li description">
             //This is my first "hello world", that is, my first responsive
@@ -18,6 +18,7 @@ const SelectedWorks = () => {
             and Sass.
           </p>
           <a
+            className="selectedWorks__container--li img-container"
             target="blank"
             href="https://sofiabmanzano.github.io/Anonymus-proxy/"
           >
@@ -47,13 +48,14 @@ const SelectedWorks = () => {
             />
           </a>
         </li>
-        <li className="selectedWorks__container--li">
+        <li className="selectedWorks__container--li right">
           <h3 className="selectedWorks__container--li title">Hangman Game</h3>
           <p className="selectedWorks__container--li description">
             //The well-known game that we have all played in class hiding from
             the teacher, made with React and a lot of love.
           </p>
           <a
+            className="selectedWorks__container--li img-container"
             target="blank"
             href="https://sofiabmanzano.github.io/hangman-game/#/"
           >
@@ -64,7 +66,7 @@ const SelectedWorks = () => {
             />
           </a>
         </li>
-        <li className="selectedWorks__container--li">
+        <li className="selectedWorks__container--li ">
           <h3 className="selectedWorks__container--li title">Otaku search</h3>
           <p className="selectedWorks__container--li description">
             //Responsive anime series search engine developed in vanilla
@@ -81,13 +83,14 @@ const SelectedWorks = () => {
             />
           </a>
         </li>
-        <li className="selectedWorks__container--li">
+        <li className="selectedWorks__container--li right">
           <h3 className="selectedWorks__container--li title">Super Pop!</h3>
           <p className="selectedWorks__container--li description">
             //Group project. Responsive interactive website for creating cards.
             Made with javascript, HTML, Sass, Local Storage.
           </p>
           <a
+            className="selectedWorks__container--li img-container"
             target="blank"
             href="https://sofiabmanzano.github.io/Buscador-series-anime-Javascript-Vanilla/"
           >
