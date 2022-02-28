@@ -19,7 +19,7 @@ const WhoIAm = () => {
 
       <section className="whoIAm">
         <p className="whoIAm__text">
-          //I'm a junior front-end developer looking for my first job
+          //I'm a junior front-end developer in search for my first job
           opportunity.
         </p>
         <p className="whoIAm__text">
