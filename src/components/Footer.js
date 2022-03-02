@@ -1,9 +1,4 @@
 const Footer = (props) => {
-  // const handleClick = (ev) => {
-  //   ev.preventDefault();
-  //   console.log(ev.currentTarget);
-  //   // props.dataColor;
-  // };
   return (
     <footer className="footer">
       <nav>
@@ -52,7 +47,13 @@ const Footer = (props) => {
       </nav>
       <ul className="footer__extra">
         <li className="footer__extra--text">
-          <button onClick={props.handleClick}> colored version</button>
+          <button
+            className="footer__extra--text btn"
+            onClick={props.handleClick}
+          >
+            {" "}
+            colored version
+          </button>
         </li>
         <li className="footer__extra--text">
           <a className="footer__extra--text link" href="#header">

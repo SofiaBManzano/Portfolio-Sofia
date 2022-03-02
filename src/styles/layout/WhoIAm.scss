@@ -6,6 +6,7 @@
   width: 100%;
   padding: 20px;
   // background-color: aqua;
+  // background-image: url("../../images/prueba.png");
   @include tablet {
     justify-content: center;
   }
@@ -107,5 +108,5 @@
   color: transparent;
   -webkit-text-stroke-width: 1px;
   letter-spacing: 4px;
-  -webkit-text-stroke-color: rgb(0, 247, 255);
+  -webkit-text-stroke-color: $pinkColor;
 }

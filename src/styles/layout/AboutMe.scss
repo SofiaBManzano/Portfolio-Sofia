@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    padding-bottom: 20px;
     @include tablet {
       display: inline-block;
       margin-left: 170px;
@@ -13,13 +14,16 @@
       justify-content: left;
     }
     &--text {
-      padding-top: 10px;
+      margin-top: 10px;
       font-family: $text-font;
       text-align: justify;
+      line-height: 20px;
+      // background-color: rgba(32, 32, 32, 0.774);
       @include tablet {
         text-align: left;
       }
     }
+
     &--img {
       margin-right: 30px;
       width: 200px;
@@ -50,5 +54,17 @@
     @include tablet {
       margin-left: 170px;
     }
+  }
+}
+.backgroundColor {
+  // background-color: $pinkColor;
+
+  background-image: url("../../images/tile.jpg");
+  background-size: contain;
+  background-repeat: repeat;
+  color: white;
+
+  span {
+    background-color: rgb(32, 32, 32);
   }
 }

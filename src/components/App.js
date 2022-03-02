@@ -15,16 +15,21 @@ function App() {
   const [dataColor, setDataColor] = useState("");
   const [photoColor, setPhotoColor] = useState("bn");
   const [colorText, setColorText] = useState("");
+  const [backgroundColor, setBackgroundColor] = useState("");
+  const [backgroundImage, setBackgroundImage] = useState("");
   const handleClick = (ev) => {
     ev.preventDefault();
     if (dataColor === "") {
       setDataColor("colored");
       setPhotoColor("photoColor");
       setColorText("coloredText");
+      setBackgroundColor("backgroundColor");
+      setBackgroundImage("backgroundImage");
     } else {
       setDataColor("");
       setPhotoColor("bn");
       setColorText("");
+      setBackgroundColor("");
     }
     // props.dataColor;
   };
@@ -33,14 +38,14 @@ function App() {
       <header>
         <UnderConstruction />
         <Nav />
-        <WhoIAm colorText={colorText} handleClick={handleClick} />
+        <WhoIAm colorText={colorText} />
       </header>
 
-      <SelectedWorks photoColor={photoColor} handleClick={handleClick} />
+      <SelectedWorks photoColor={photoColor} />
 
-      <AboutMe />
+      <AboutMe backgroundColor={backgroundColor} />
 
-      <Contact />
+      <Contact backgroundImage={backgroundImage} />
       <Footer handleClick={handleClick} />
     </div>
   );
