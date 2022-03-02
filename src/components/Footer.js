@@ -46,7 +46,7 @@ const Footer = () => {
         </ul>
       </nav>
       <ul className="footer__extra">
-        <li className="footer__extra--text">colored version</li>
+        {/* <li className="footer__extra--text">colored version</li> */}
         <li className="footer__extra--text">
           <a className="footer__extra--text link" href="#header">
             back to top

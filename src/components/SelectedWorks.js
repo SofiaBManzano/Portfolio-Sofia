@@ -92,7 +92,7 @@ const SelectedWorks = () => {
           <a
             className="selectedWorks__container--li img-container"
             target="blank"
-            href="https://sofiabmanzano.github.io/Buscador-series-anime-Javascript-Vanilla/"
+            href="https://sofiabmanzano.github.io/Super-Pop-/"
           >
             <img
               className="selectedWorks__container--li li__img"
