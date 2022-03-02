@@ -4,7 +4,7 @@ import hangman from "../images/ahorcado.jpg";
 import otaku from "../images/otaku-search.jpg";
 import superPop from "../images/super-pop.jpg";
 
-const SelectedWorks = () => {
+const SelectedWorks = (props) => {
   return (
     <section className="selectedWorks" id="work">
       {/* Aqui mas adelante haré un hover en la imagen donde pasando el ratón por encima se verá la description */}
@@ -23,7 +23,7 @@ const SelectedWorks = () => {
             href="https://sofiabmanzano.github.io/Anonymus-proxy/"
           >
             <img
-              className="selectedWorks__container--li li__img"
+              className={`selectedWorks__container--li li__img--${props.photoColor}`}
               src={anonymusProxy}
               alt="anonymusProxy"
             />
@@ -42,7 +42,7 @@ const SelectedWorks = () => {
             href="https://sofiabmanzano.github.io/Buscador-Harry-Potter---React/#/"
           >
             <img
-              className="selectedWorks__container--li li__img"
+              className={`selectedWorks__container--li li__img--${props.photoColor}`}
               src={harryPotter}
               alt="harryPotter"
             />
@@ -60,7 +60,7 @@ const SelectedWorks = () => {
             href="https://sofiabmanzano.github.io/hangman-game/#/"
           >
             <img
-              className="selectedWorks__container--li li__img"
+              className={`selectedWorks__container--li li__img--${props.photoColor}`}
               src={hangman}
               alt="hangman-game"
             />
@@ -77,7 +77,7 @@ const SelectedWorks = () => {
             href="https://sofiabmanzano.github.io/Buscador-series-anime-Javascript-Vanilla/"
           >
             <img
-              className="selectedWorks__container--li li__img"
+              className={`selectedWorks__container--li li__img--${props.photoColor}`}
               src={otaku}
               alt="otaku-search"
             />
@@ -92,10 +92,10 @@ const SelectedWorks = () => {
           <a
             className="selectedWorks__container--li img-container"
             target="blank"
-            href="https://sofiabmanzano.github.io/Buscador-series-anime-Javascript-Vanilla/"
+            href="https://sofiabmanzano.github.io/Super-Pop-/"
           >
             <img
-              className="selectedWorks__container--li li__img"
+              className={`selectedWorks__container--li li__img--${props.photoColor}`}
               src={superPop}
               alt="superPop"
             />

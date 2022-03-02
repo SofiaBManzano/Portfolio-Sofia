@@ -1,11 +1,12 @@
 // import "../styles/WhoIAm.scss";
-const WhoIAm = () => {
+const WhoIAm = (props) => {
   return (
     <div className="container">
       <section className="me">
         <h1 className="me__name">Hello</h1>
         <h2 className="me__name">
-          I am <span className="me__name--myName">Sofía</span>
+          I am{" "}
+          <span className={`me__name--myName ${props.colorText}`}>Sofía</span>
         </h2>
         <div className="me__containerJobs">
           <span className="fas fa-light fa-code-branch me__containerJobs--icon"></span>

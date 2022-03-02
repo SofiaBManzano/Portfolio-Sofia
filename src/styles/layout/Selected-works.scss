@@ -58,8 +58,25 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      filter: contrast(160%) grayscale(100%);
+      // filter: contrast(160%) grayscale(100%);
       width: 90%;
+      &--bn {
+        padding-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        filter: contrast(160%) grayscale(100%);
+      }
+
+      &--photoColor {
+        padding-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        filter: saturate(85%);
+      }
       @include desktop {
         margin: 0px;
         width: 70%;

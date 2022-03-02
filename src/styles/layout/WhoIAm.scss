@@ -33,7 +33,7 @@
 
     &--myName {
       font-family: $titles-font-family-regular;
-      color: $black;
+      color: transparent;
       -webkit-text-stroke-width: 0.5px;
       letter-spacing: 4px;
       -webkit-text-stroke-color: $white;
@@ -101,4 +101,11 @@
       font-size: 20px;
     }
   }
+}
+.coloredText {
+  font-family: $titles-font-family-regular;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: 4px;
+  -webkit-text-stroke-color: rgb(0, 247, 255);
 }
