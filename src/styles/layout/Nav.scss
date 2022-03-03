@@ -2,7 +2,7 @@
   top: 0px;
   right: 0px;
 
-  &__container {
+  &__container .nav .navColored {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,7 +11,7 @@
     padding-top: 40px;
     z-index: 50;
     position: fixed;
-    background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
+    //background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
     @include tablet {
       // background-color: aqua;
       justify-content: flex-end;
@@ -32,4 +32,11 @@
       }
     }
   }
+}
+
+.bnNav {
+  background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
+}
+.navColored {
+  background-color: pink;
 }

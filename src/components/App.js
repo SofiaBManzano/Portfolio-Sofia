@@ -17,6 +17,7 @@ function App() {
   const [colorText, setColorText] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("");
   const [backgroundImage, setBackgroundImage] = useState("");
+  const [navColored, setNavColored] = useState("bnNav");
   const handleClick = (ev) => {
     ev.preventDefault();
     if (dataColor === "") {
@@ -25,11 +26,13 @@ function App() {
       setColorText("coloredText");
       setBackgroundColor("backgroundColor");
       setBackgroundImage("backgroundImage");
+      setNavColored("navColored");
     } else {
       setDataColor("");
       setPhotoColor("bn");
       setColorText("");
       setBackgroundColor("");
+      setNavColored("bnNav");
     }
     // props.dataColor;
   };
@@ -37,7 +40,7 @@ function App() {
     <div className={`body ${dataColor}`}>
       <header>
         <UnderConstruction />
-        <Nav />
+        <Nav navColored={navColored} />
         <WhoIAm colorText={colorText} />
       </header>
 

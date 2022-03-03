@@ -1,8 +1,8 @@
 // import "../styles/Nav.scss";
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className="nav" id="header">
-      <ul className="nav__container">
+      <ul className={`nav__container ${props.navColored}`}>
         <li className="nav__container--title">
           <a className="nav__container--title link" href="#work">
             work
