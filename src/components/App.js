@@ -12,7 +12,8 @@ import "../styles/App.scss";
 
 function App() {
   //STATES
-  const [dataColor, setDataColor] = useState("");
+  const [textBasicColor, setTextBasicColor] = useState("");
+  const [backgroundToggle, setBackgroundToggle] = useState("");
   const [photoColor, setPhotoColor] = useState("bn");
   const [colorText, setColorText] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("");
@@ -20,27 +21,29 @@ function App() {
   const [navColored, setNavColored] = useState("bnNav");
   const handleClick = (ev) => {
     ev.preventDefault();
-    if (dataColor === "") {
-      setDataColor("colored");
+    if (textBasicColor === "") {
+      setTextBasicColor("colored");
       setPhotoColor("photoColor");
       setColorText("coloredText");
       setBackgroundColor("backgroundColor");
       setBackgroundImage("backgroundImage");
       setNavColored("navColored");
+      setBackgroundToggle("backgroundWhite");
     } else {
-      setDataColor("");
+      setTextBasicColor("");
       setPhotoColor("bn");
       setColorText("");
       setBackgroundColor("");
       setNavColored("bnNav");
+      setBackgroundToggle("");
     }
-    // props.dataColor;
+    // props.textBasicColor;
   };
   return (
-    <div className={`body ${dataColor}`}>
+    <div className={`body ${textBasicColor} ${backgroundToggle}`}>
       <header>
         <UnderConstruction />
-        <Nav navColored={navColored} />
+        <Nav textBasicColor={textBasicColor} navColored={navColored} />
         <WhoIAm colorText={colorText} />
       </header>
 

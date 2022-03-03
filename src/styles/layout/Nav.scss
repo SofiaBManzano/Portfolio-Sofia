@@ -2,16 +2,16 @@
   top: 0px;
   right: 0px;
 
-  &__container .nav .navColored {
+  &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    // width: 100%;
     list-style: none;
     padding-top: 40px;
     z-index: 50;
     position: fixed;
-    //background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
+
     @include tablet {
       // background-color: aqua;
       justify-content: flex-end;
@@ -23,20 +23,24 @@
       margin: 10px;
       font-size: 15px;
       font-family: $titles-font-family-regular;
-
       text-shadow: 2px 0 0 $black;
-
+      color: white;
       .link {
         text-decoration: none;
-        color: white;
       }
     }
   }
 }
 
+// .bnNav {
+//   background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
+// }
+.navColored {
+  background: linear-gradient(to bottom, $white, rgba(255, 255, 255, 0));
+  width: 100vw;
+}
 .bnNav {
   background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
-}
-.navColored {
-  background-color: pink;
+  width: 100vw;
+  // background-color: aqua;
 }
