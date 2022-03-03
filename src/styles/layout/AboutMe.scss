@@ -59,12 +59,21 @@
 .backgroundColor {
   // background-color: $pinkColor;
 
-  background-image: url("../../images/tile.jpg");
-  background-size: contain;
-  background-repeat: repeat;
-  color: white;
+  background-image: url("../../images/pruebamobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-  span {
-    background-color: rgb(32, 32, 32);
+  color: black;
+  @include tablet {
+    background-size: contain;
+    background-image: url("../../images/pruebatablet.png");
   }
+  @include desktop {
+    background-size: contain;
+    // background-position: right;
+    background-image: url("../../images/pruebatabletflip.png");
+  }
+  // span {
+  //   background-color: rgb(32, 32, 32);
+  // }
 }
