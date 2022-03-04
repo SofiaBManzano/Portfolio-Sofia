@@ -12,38 +12,52 @@ import "../styles/App.scss";
 
 function App() {
   //STATES
-  const [textBasicColor, setTextBasicColor] = useState("");
-  const [backgroundToggle, setBackgroundToggle] = useState("");
+  const [textBasicColor, setTextBasicColor] = useState("textColorWhite");
+  const [backgroundToggle, setBackgroundToggle] = useState("backgroundBlack");
   const [photoColor, setPhotoColor] = useState("bn");
   const [colorText, setColorText] = useState("");
-  const [backgroundColor, setBackgroundColor] = useState("");
+  const [backgroundColor, setBackgroundColor] = useState("backgroundBlack");
   const [backgroundImage, setBackgroundImage] = useState("");
-  const [navColored, setNavColored] = useState("bnNav");
+  //manejadores del Nav
+  const [navGradient, setNavGradient] = useState("navGradientDark");
+  const [navShadow, setNavShadow] = useState("shadowOn");
   const handleClick = (ev) => {
     ev.preventDefault();
-    if (textBasicColor === "") {
+    toggleMode();
+  };
+  const toggleMode = () => {
+    if (backgroundToggle === "backgroundBlack") {
+      console.log("cambio a blanco");
+      setBackgroundToggle("backgroundWhite");
+      setTextBasicColor("textColorDark");
+      setPhotoColor("bn");
+      setColorText("");
+      setBackgroundColor("");
+      setNavGradient("navGradientLight");
+      setTextBasicColor("textColorDark");
+      setNavShadow("");
+    } else {
+      console.log("cambio a negro");
+      setBackgroundToggle("backgroundBlack");
       setTextBasicColor("colored");
       setPhotoColor("photoColor");
       setColorText("coloredText");
       setBackgroundColor("backgroundColor");
       setBackgroundImage("backgroundImage");
-      setNavColored("navColored");
-      setBackgroundToggle("backgroundWhite");
-    } else {
-      setTextBasicColor("");
-      setPhotoColor("bn");
-      setColorText("");
-      setBackgroundColor("");
-      setNavColored("bnNav");
-      setBackgroundToggle("");
+      setNavGradient("navGradientDark");
+      setTextBasicColor("textColorWhite");
+      setNavShadow("shadowOn");
     }
-    // props.textBasicColor;
   };
   return (
     <div className={`body ${textBasicColor} ${backgroundToggle}`}>
       <header>
         <UnderConstruction />
-        <Nav textBasicColor={textBasicColor} navColored={navColored} />
+        <Nav
+          navShadow={navShadow}
+          textBasicColor={textBasicColor}
+          navGradient={navGradient}
+        />
         <WhoIAm colorText={colorText} />
       </header>
 
@@ -52,7 +66,7 @@ function App() {
       <AboutMe backgroundColor={backgroundColor} />
 
       <Contact backgroundImage={backgroundImage} />
-      <Footer handleClick={handleClick} />
+      <Footer textBasicColor={textBasicColor} handleClick={handleClick} />
     </div>
   );
 }

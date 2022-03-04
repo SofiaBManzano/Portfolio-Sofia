@@ -13,7 +13,6 @@
     position: fixed;
 
     @include tablet {
-      // background-color: aqua;
       justify-content: flex-end;
       padding-right: 50px;
       // padding-top: 20px;
@@ -23,8 +22,11 @@
       margin: 10px;
       font-size: 15px;
       font-family: $titles-font-family-regular;
-      text-shadow: 2px 0 0 $black;
+      // text-shadow: 2px 0 0 $black;
       color: white;
+      .shadowOn {
+        text-shadow: 2px 0 0 $black;
+      }
       .link {
         text-decoration: none;
       }
@@ -35,11 +37,11 @@
 // .bnNav {
 //   background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
 // }
-.navColored {
+.navGradientLight {
   background: linear-gradient(to bottom, $white, rgba(255, 255, 255, 0));
   width: 100vw;
 }
-.bnNav {
+.navGradientDark {
   background: linear-gradient(to bottom, $black, rgba(255, 255, 255, 0));
   width: 100vw;
   // background-color: aqua;

@@ -5,7 +5,7 @@ const Footer = (props) => {
         <ul className="footer__rrss">
           <li className="footer__rrss--li">
             <a
-              className="footer__rrss--li link"
+              className={`footer__rrss--li link ${props.textColorDark}`}
               href="https://github.com/SofiaBManzano"
               target="_blank"
               rel="noreferrer"
@@ -15,7 +15,7 @@ const Footer = (props) => {
           </li>
           <li className="footer__rrss--li">
             <a
-              className="footer__rrss--li link"
+              className={`footer__rrss--li link ${props.textColorDark}`}
               href="https://www.linkedin.com/in/sofiablas/"
               target="_blank"
               rel="noreferrer"
@@ -25,7 +25,7 @@ const Footer = (props) => {
           </li>
           <li className="footer__rrss--li">
             <a
-              className="footer__rrss--li link"
+              className={`footer__rrss--li link ${props.textBasicColor}`}
               href="https://www.instagram.com/sofiabmanzano/?hl=es"
               target="_blank"
               rel="noreferrer"
@@ -35,7 +35,7 @@ const Footer = (props) => {
           </li>
           <li className="footer__rrss--li">
             <a
-              className="footer__rrss--li link"
+              className={`footer__rrss--li link ${props.textColorDark}`}
               href="https://vimeo.com/311440378"
               target="_blank"
               rel="noreferrer"

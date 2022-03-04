@@ -2,8 +2,8 @@
 const Nav = (props) => {
   return (
     <nav className="nav" id="header">
-      <ul className={`nav__container ${props.navColored}`}>
-        <li className="nav__container--title ">
+      <ul className={`nav__container ${props.navGradient}`}>
+        <li className={`nav__container--title ${props.navShadow}`}>
           <a
             className={`nav__container--title link ${props.textBasicColor}`}
             href="#work"
