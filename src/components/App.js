@@ -15,12 +15,15 @@ function App() {
   const [textBasicColor, setTextBasicColor] = useState("textColorWhite");
   const [backgroundToggle, setBackgroundToggle] = useState("backgroundBlack");
   const [photoColor, setPhotoColor] = useState("bn");
-  const [colorText, setColorText] = useState("");
+  const [borderText, setBorderText] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("backgroundBlack");
   const [backgroundImage, setBackgroundImage] = useState("");
   //manejadores del Nav
   const [navGradient, setNavGradient] = useState("navGradientDark");
   const [navShadow, setNavShadow] = useState("shadowOn");
+  //who i am
+  const [backgroundImageHello, setBackgroundImageHello] = useState("");
+  const [whiteTextLight, setWhiteTextLight] = useState("");
   const handleClick = (ev) => {
     ev.preventDefault();
     toggleMode();
@@ -31,22 +34,24 @@ function App() {
       setBackgroundToggle("backgroundWhite");
       setTextBasicColor("textColorDark");
       setPhotoColor("bn");
-      setColorText("");
+      setBorderText("borderText");
       setBackgroundColor("");
       setNavGradient("navGradientLight");
       setTextBasicColor("textColorDark");
       setNavShadow("");
+      setBackgroundImageHello("backgroundImageHello");
     } else {
       console.log("cambio a negro");
       setBackgroundToggle("backgroundBlack");
       setTextBasicColor("colored");
       setPhotoColor("photoColor");
-      setColorText("coloredText");
+      setBorderText("");
       setBackgroundColor("backgroundColor");
       setBackgroundImage("backgroundImage");
       setNavGradient("navGradientDark");
       setTextBasicColor("textColorWhite");
       setNavShadow("shadowOn");
+      setBackgroundImageHello("");
     }
   };
   return (
@@ -58,7 +63,10 @@ function App() {
           textBasicColor={textBasicColor}
           navGradient={navGradient}
         />
-        <WhoIAm colorText={colorText} />
+        <WhoIAm
+          backgroundImageHello={backgroundImageHello}
+          borderText={borderText}
+        />
       </header>
 
       <SelectedWorks photoColor={photoColor} />

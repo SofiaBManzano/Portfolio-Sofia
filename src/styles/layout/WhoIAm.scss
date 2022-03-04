@@ -5,8 +5,8 @@
   justify-content: center;
   width: 100%;
   padding: 20px;
-  // background-color: aqua;
-  background-image: url("../../images/cabeceramobile.png");
+
+  // background-image: url("../../images/cabeceramobile.png");
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -106,10 +106,16 @@
     }
   }
 }
-.coloredText {
+.borderText {
   font-family: $titles-font-family-regular;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   letter-spacing: 4px;
   -webkit-text-stroke-color: $pinkColor;
+}
+.backgroundImageHello {
+  background-image: url("../../images/cabeceramobile.png");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
