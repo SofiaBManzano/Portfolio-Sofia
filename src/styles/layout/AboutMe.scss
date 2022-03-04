@@ -6,11 +6,10 @@
     justify-content: center;
     align-items: flex-end;
     @include tablet {
-      display: flex;
-      flex-direction: row;
+      display: inline-block;
+      margin-left: 170px;
+      margin-right: 170px;
       justify-content: left;
-      align-items: flex-start;
-      flex-wrap: wrap;
     }
     &--text {
       padding-top: 10px;
@@ -18,7 +17,7 @@
       text-align: justify;
       @include tablet {
         text-align: left;
-        width: 490px;
+        // width: 490px;
       }
     }
     &--img {
