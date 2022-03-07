@@ -1,12 +1,12 @@
-import anonymusProxy from "../images/anonymus-proxy.jpg";
-import harryPotter from "../images/harry-potter.jpg";
-import hangman from "../images/ahorcado.jpg";
-import otaku from "../images/otaku-search.jpg";
-import superPop from "../images/super-pop.jpg";
+import anonymusProxy from "../../images/anonymus-proxy.jpg";
+import harryPotter from "../../images/harry-potter.jpg";
+import hangman from "../../images/ahorcado.jpg";
+import otaku from "../../images/otaku-search.jpg";
+import superPop from "../../images/super-pop.jpg";
 
 const SelectedWorks = (props) => {
   return (
-    <section className="selectedWorks" id="work">
+    <article className="selectedWorks" id="work">
       {/* Aqui mas adelante haré un hover en la imagen donde pasando el ratón por encima se verá la description */}
       <h2 className="selectedWorks__title">selected works</h2>
       <ul className="selectedWorks__container">
@@ -102,7 +102,7 @@ const SelectedWorks = (props) => {
           </a>
         </li>
       </ul>
-    </section>
+    </article>
   );
 };
 export default SelectedWorks;

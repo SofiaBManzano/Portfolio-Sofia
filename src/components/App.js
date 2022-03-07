@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-import UnderConstruction from "./UnderConstruction";
-import Nav from "./Nav";
-import WhoIAm from "./WhoIAm";
-import SelectedWorks from "./SelectedWorks";
+import UnderConstruction from "./Header/UnderConstruction";
+import Nav from "./Header/Nav";
+import Landing from "./Landing/Landing";
+import SelectedWorks from "./Selected-works/SelectedWorks";
 import AboutMe from "./AboutMe";
 import Contact from "./Contact";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 
 import "../styles/App.scss";
 
@@ -24,10 +24,7 @@ function App() {
   const [backgroundImageHello, setBackgroundImageHello] = useState("");
   const [paragraphColor, setParagraphColor] = useState("");
   const [backgroundFooter, setBackgroundFooter] = useState("");
-  const handleClick = (ev) => {
-    ev.preventDefault();
-    toggleMode();
-  };
+
   const toggleMode = () => {
     if (backgroundToggle === "backgroundBlack") {
       console.log("cambio a blanco");
@@ -63,7 +60,7 @@ function App() {
           textBasicColor={textBasicColor}
           navGradient={navGradient}
         />
-        <WhoIAm
+        <Landing
           backgroundImageHello={backgroundImageHello}
           borderText={borderText}
           paragraphColor={paragraphColor}
@@ -79,7 +76,8 @@ function App() {
         backgroundFooter={backgroundFooter}
         textBasicColor={textBasicColor}
         paragraphColor={paragraphColor}
-        handleClick={handleClick}
+        // handleClick={handleClick}
+        toggleMode={toggleMode}
       />
     </div>
   );
