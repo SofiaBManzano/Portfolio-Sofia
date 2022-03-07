@@ -138,3 +138,12 @@
     background-image: url("../../images/cabeceradesktop2.png");
   }
 }
+.smile {
+  &__face {
+    // border-radius: 50%;
+    padding: 3px;
+    background-color: yellow;
+    color: black;
+    transform: rotate(90deg);
+  }
+}
