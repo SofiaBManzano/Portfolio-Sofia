@@ -120,7 +120,7 @@
 }
 .backgroundImageHello {
   // background-color: aqua;
-  background-image: url("../../images/cabeceramobile.png");
+  background-image: url("../../images/cabeceramobile2.png");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -128,13 +128,13 @@
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url("../../images/cabeceradesktop.png");
+    background-image: url("../../images/cabeceradesktop2.png");
     background-size: cover;
   }
   @include desktop {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url("../../images/cabeceradesktop.png");
+    background-image: url("../../images/cabeceradesktop2.png");
   }
 }
