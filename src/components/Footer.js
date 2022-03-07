@@ -5,7 +5,7 @@ const Footer = (props) => {
         <ul className="footer__rrss">
           <li className="footer__rrss--li">
             <a
-              className={`footer__rrss--li link ${props.textColorDark}`}
+              className={`footer__rrss--li link ${props.textBasicColor}`}
               href="https://github.com/SofiaBManzano"
               target="_blank"
               rel="noreferrer"
@@ -15,7 +15,7 @@ const Footer = (props) => {
           </li>
           <li className="footer__rrss--li">
             <a
-              className={`footer__rrss--li link ${props.textColorDark}`}
+              className={`footer__rrss--li link ${props.textBasicColor}`}
               href="https://www.linkedin.com/in/sofiablas/"
               target="_blank"
               rel="noreferrer"
@@ -45,18 +45,21 @@ const Footer = (props) => {
           </li>
         </ul>
       </nav>
-      <ul className="footer__extra">
+      <ul className={`footer__extra ${props.backgroundFooter}`}>
         <li className="footer__extra--text">
           <button
-            className="footer__extra--text btn"
+            className={`footer__extra--text btn ${props.paragraphColor}`}
             onClick={props.handleClick}
           >
             {" "}
             colored version
           </button>
         </li>
-        <li className="footer__extra--text">
-          <a className="footer__extra--text link" href="#header">
+        <li className="footer__extra--text ">
+          <a
+            className={`footer__extra--text link ${props.paragraphColor}`}
+            href="#header"
+          >
             back to top
           </a>
         </li>

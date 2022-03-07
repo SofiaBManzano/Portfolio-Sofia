@@ -4,14 +4,13 @@
   font-family: $titles-font-family-regular;
 
   &__rrss {
-    padding: 20px;
+    padding: 20px 50px 20px 50px;
     display: flex;
     justify-content: space-between;
     &--li {
       font-size: 10px;
       .link {
         text-decoration: none;
-        color: white;
       }
     }
   }
@@ -28,11 +27,12 @@
         border: none;
         background-color: transparent;
         font-family: $titles-font-family-regular;
-        color: rgb(0, 0, 0);
+        // color: rgb(0, 0, 0);
+        cursor: pointer;
       }
       .link {
         text-decoration: none;
-        color: $black;
+        // color: $black;
       }
     }
   }

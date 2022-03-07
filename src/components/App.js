@@ -23,6 +23,7 @@ function App() {
   //who i am
   const [backgroundImageHello, setBackgroundImageHello] = useState("");
   const [paragraphColor, setParagraphColor] = useState("");
+  const [backgroundFooter, setBackgroundFooter] = useState("");
   const handleClick = (ev) => {
     ev.preventDefault();
     toggleMode();
@@ -31,17 +32,18 @@ function App() {
     if (backgroundToggle === "backgroundBlack") {
       console.log("cambio a blanco");
       setBackgroundToggle("backgroundWhite");
-      setPhotoColor("bn");
+      setPhotoColor("photoColor");
       setBorderText("borderText");
       setNavGradient("navGradientLight");
       setTextBasicColor("textColorDark");
       setNavShadow("");
       setBackgroundImageHello("backgroundImageHello");
       setParagraphColor("textColorWhite");
+      setBackgroundFooter("backgroundBlack");
     } else {
       console.log("cambio a negro");
       setBackgroundToggle("backgroundBlack");
-      setPhotoColor("photoColor");
+      setPhotoColor("bn");
       setBorderText("");
       setBackgroundImage("backgroundImage");
       setNavGradient("navGradientDark");
@@ -49,6 +51,7 @@ function App() {
       setNavShadow("shadowOn");
       setBackgroundImageHello("");
       setParagraphColor("");
+      setBackgroundFooter("");
     }
   };
   return (
@@ -72,7 +75,12 @@ function App() {
       <AboutMe />
 
       <Contact backgroundImage={backgroundImage} />
-      <Footer textBasicColor={textBasicColor} handleClick={handleClick} />
+      <Footer
+        backgroundFooter={backgroundFooter}
+        textBasicColor={textBasicColor}
+        paragraphColor={paragraphColor}
+        handleClick={handleClick}
+      />
     </div>
   );
 }
