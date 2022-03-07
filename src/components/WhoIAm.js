@@ -1,11 +1,12 @@
 // import "../styles/WhoIAm.scss";
-const WhoIAm = () => {
+const WhoIAm = (props) => {
   return (
-    <div className="container">
+    <div className={`container ${props.backgroundImageHello}`}>
       <section className="me">
         <h1 className="me__name">Hello</h1>
         <h2 className="me__name">
-          I am <span className="me__name--myName">Sofía</span>
+          I am{" "}
+          <span className={`me__name--myName ${props.borderText}`}>Sofía</span>
         </h2>
         <div className="me__containerJobs">
           <span className="fas fa-light fa-code-branch me__containerJobs--icon"></span>
@@ -18,11 +19,11 @@ const WhoIAm = () => {
       </section>
 
       <section className="whoIAm">
-        <p className="whoIAm__text">
+        <p className={`whoIAm__text ${props.paragraphColor}`}>
           //I'm a junior front-end developer in search for my first job
           opportunity.
         </p>
-        <p className="whoIAm__text">
+        <p className={`whoIAm__text ${props.paragraphColor}`}>
           //My goal is to continue learning and gaining knowledge to bring my
           potential to its fullest in web development.
         </p>

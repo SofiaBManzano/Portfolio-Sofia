@@ -1,10 +1,12 @@
 .aboutMe {
   padding: 20px;
+
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    padding-bottom: 20px;
     @include tablet {
       display: inline-block;
       margin-left: 170px;
@@ -12,14 +14,16 @@
       justify-content: left;
     }
     &--text {
-      padding-top: 10px;
+      margin-top: 10px;
       font-family: $text-font;
       text-align: justify;
+      // line-height: 20px;
+      // background-color: rgba(32, 32, 32, 0.774);
       @include tablet {
         text-align: left;
-        // width: 490px;
       }
     }
+
     &--img {
       margin-right: 30px;
       width: 200px;
@@ -37,10 +41,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        float: left;
       }
-      // @include desktop {
-      //   width: 20%;
-      // }
     }
   }
 
@@ -49,5 +51,29 @@
     font-family: $titles-font-family-regular;
     padding-top: 20px;
     padding-bottom: 20px;
+    @include tablet {
+      margin-left: 170px;
+    }
   }
+}
+.backgroundColor {
+  // background-color: $pinkColor;
+
+  background-image: url("../../images/pruebamobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: black;
+  @include tablet {
+    background-size: contain;
+    background-image: url("../../images/pruebatablet.png");
+  }
+  @include desktop {
+    background-size: contain;
+    // background-position: right;
+    background-image: url("../../images/pruebatabletflip.png");
+  }
+  // span {
+  //   background-color: rgb(32, 32, 32);
+  // }
 }

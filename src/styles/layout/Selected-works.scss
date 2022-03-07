@@ -1,16 +1,22 @@
 .selectedWorks {
-  width: 100%;
   padding: 18px;
-  padding-top: 70px;
 
   &__title {
     font-size: 30px;
     font-family: $titles-font-family-regular;
+    @include desktop {
+      padding-left: 80px;
+    }
   }
   &__container {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    @include desktop {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
     &--li {
       @include desktop {
         display: flex;
@@ -42,7 +48,6 @@
     &--li .img-container {
       @include desktop {
         display: flex;
-
         align-items: flex-end;
       }
     }
@@ -51,10 +56,28 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      filter: contrast(160%) grayscale(100%);
+      // filter: contrast(160%) grayscale(100%);
       width: 90%;
+      &--bn {
+        padding-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        filter: contrast(160%) grayscale(100%);
+      }
+
+      &--photoColor {
+        padding-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        filter: saturate(85%);
+      }
       @include desktop {
         margin: 0px;
+        width: 70%;
       }
     }
   }

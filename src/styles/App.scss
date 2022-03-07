@@ -19,6 +19,17 @@
 
 .body {
   scroll-behavior: smooth;
+}
+.textColorWhite {
   color: white;
-  background-color: black;
+}
+.backgroundBlack {
+  background-color: $black;
+}
+.textColorDark {
+  // background-color: rgb(255, 255, 255);
+  color: $grayText;
+}
+.backgroundWhite {
+  background-color: $white;
 }

@@ -1,20 +1,29 @@
 // import "../styles/Nav.scss";
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className="nav" id="header">
-      <ul className="nav__container">
-        <li className="nav__container--title">
-          <a className="nav__container--title link" href="#work">
+      <ul className={`nav__container ${props.navGradient}`}>
+        <li className={`nav__container--title ${props.navShadow}`}>
+          <a
+            className={`nav__container--title link ${props.textBasicColor}`}
+            href="#work"
+          >
             work
           </a>
         </li>
         <li className="nav__container--title">
-          <a className="nav__container--title link" href="#contact">
+          <a
+            className={`nav__container--title link ${props.textBasicColor}`}
+            href="#contact"
+          >
             contact
           </a>
         </li>
         <li className="nav__container--title">
-          <a className="nav__container--title link" href="#aboutMe">
+          <a
+            className={`nav__container--title link ${props.textBasicColor}`}
+            href="#aboutMe"
+          >
             about me
           </a>
         </li>
