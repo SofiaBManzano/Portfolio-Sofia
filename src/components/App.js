@@ -16,14 +16,13 @@ function App() {
   const [backgroundToggle, setBackgroundToggle] = useState("backgroundBlack");
   const [photoColor, setPhotoColor] = useState("bn");
   const [borderText, setBorderText] = useState("");
-  const [backgroundColor, setBackgroundColor] = useState("backgroundBlack");
   const [backgroundImage, setBackgroundImage] = useState("");
   //manejadores del Nav
   const [navGradient, setNavGradient] = useState("navGradientDark");
   const [navShadow, setNavShadow] = useState("shadowOn");
   //who i am
   const [backgroundImageHello, setBackgroundImageHello] = useState("");
-  const [whiteTextLight, setWhiteTextLight] = useState("");
+  const [paragraphColor, setParagraphColor] = useState("");
   const handleClick = (ev) => {
     ev.preventDefault();
     toggleMode();
@@ -32,26 +31,24 @@ function App() {
     if (backgroundToggle === "backgroundBlack") {
       console.log("cambio a blanco");
       setBackgroundToggle("backgroundWhite");
-      setTextBasicColor("textColorDark");
       setPhotoColor("bn");
       setBorderText("borderText");
-      setBackgroundColor("");
       setNavGradient("navGradientLight");
       setTextBasicColor("textColorDark");
       setNavShadow("");
       setBackgroundImageHello("backgroundImageHello");
+      setParagraphColor("textColorWhite");
     } else {
       console.log("cambio a negro");
       setBackgroundToggle("backgroundBlack");
-      setTextBasicColor("colored");
       setPhotoColor("photoColor");
       setBorderText("");
-      setBackgroundColor("backgroundColor");
       setBackgroundImage("backgroundImage");
       setNavGradient("navGradientDark");
       setTextBasicColor("textColorWhite");
       setNavShadow("shadowOn");
       setBackgroundImageHello("");
+      setParagraphColor("");
     }
   };
   return (
@@ -66,12 +63,13 @@ function App() {
         <WhoIAm
           backgroundImageHello={backgroundImageHello}
           borderText={borderText}
+          paragraphColor={paragraphColor}
         />
       </header>
 
       <SelectedWorks photoColor={photoColor} />
 
-      <AboutMe backgroundColor={backgroundColor} />
+      <AboutMe />
 
       <Contact backgroundImage={backgroundImage} />
       <Footer textBasicColor={textBasicColor} handleClick={handleClick} />
