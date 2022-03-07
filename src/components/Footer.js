@@ -35,7 +35,7 @@ const Footer = (props) => {
           </li>
           <li className="footer__rrss--li">
             <a
-              className={`footer__rrss--li link ${props.textColorDark}`}
+              className={`footer__rrss--li link ${props.textBasicColor}`}
               href="https://vimeo.com/311440378"
               target="_blank"
               rel="noreferrer"
