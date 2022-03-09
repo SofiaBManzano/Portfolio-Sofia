@@ -2,7 +2,7 @@ import propTypes from "prop-types";
 import profilePhoto from "../images/sofia.jpg";
 const AboutMe = (props) => {
   return (
-    <section className={`aboutMe ${props.backgroundColor}`} id="aboutMe">
+    <section className={`aboutMe ${props.backgroundImageWhoIAm}`} id="aboutMe">
       <h1 className="aboutMe__title">Who am I?</h1>
       <div className="aboutMe__container">
         <div className="aboutMe__container--img"></div>

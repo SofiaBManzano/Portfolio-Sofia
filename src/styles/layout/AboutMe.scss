@@ -1,6 +1,9 @@
 .aboutMe {
   padding: 20px;
-
+  @include tablet {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
@@ -9,8 +12,6 @@
     padding-bottom: 20px;
     @include tablet {
       display: inline-block;
-      margin-left: 170px;
-      margin-right: 170px;
       justify-content: left;
     }
     &--text {
@@ -51,18 +52,13 @@
     font-family: $titles-font-family-regular;
     padding-top: 20px;
     padding-bottom: 20px;
-    @include tablet {
-      margin-left: 170px;
-    }
   }
 }
-.backgroundColor {
+.backgroundImageWhoIAm {
   // background-color: $pinkColor;
-
   background-image: url("../../images/pruebamobile.png");
   background-size: cover;
   background-repeat: no-repeat;
-
   color: black;
   @include tablet {
     background-size: contain;

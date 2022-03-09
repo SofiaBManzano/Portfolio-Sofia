@@ -16,11 +16,12 @@ function App() {
   const [backgroundToggle, setBackgroundToggle] = useState("backgroundBlack");
   const [photoColor, setPhotoColor] = useState("bn");
   const [borderText, setBorderText] = useState("");
-  const [backgroundImage, setBackgroundImage] = useState("");
+  //who i am
+  const [backgroundImageWhoIAm, setBackgroundImageWhoIAm] = useState("");
   //manejadores del Nav
   const [navGradient, setNavGradient] = useState("navGradientDark");
   const [navShadow, setNavShadow] = useState("shadowOn");
-  //who i am
+  //landing
   const [backgroundImageHello, setBackgroundImageHello] = useState("");
   const [paragraphColor, setParagraphColor] = useState("");
   const [backgroundFooter, setBackgroundFooter] = useState("");
@@ -37,18 +38,20 @@ function App() {
       setBackgroundImageHello("backgroundImageHello");
       setParagraphColor("textColorWhite");
       setBackgroundFooter("backgroundBlack");
+      setBackgroundImageWhoIAm("backgroundImageWhoIAm");
     } else {
       console.log("cambio a negro");
       setBackgroundToggle("backgroundBlack");
       setPhotoColor("bn");
       setBorderText("");
-      setBackgroundImage("backgroundImage");
+      setBackgroundImageWhoIAm("");
       setNavGradient("navGradientDark");
       setTextBasicColor("textColorWhite");
       setNavShadow("shadowOn");
       setBackgroundImageHello("");
       setParagraphColor("");
       setBackgroundFooter("");
+      setBackgroundImageWhoIAm("");
     }
   };
   return (
@@ -63,15 +66,15 @@ function App() {
         <Landing
           backgroundImageHello={backgroundImageHello}
           borderText={borderText}
-          paragraphColor={paragraphColor}
+          textBasicColor={textBasicColor}
         />
       </header>
 
       <SelectedWorks photoColor={photoColor} />
 
-      <AboutMe />
+      <AboutMe backgroundImageWhoIAm={backgroundImageWhoIAm} />
 
-      <Contact backgroundImage={backgroundImage} />
+      <Contact />
       <Footer
         backgroundFooter={backgroundFooter}
         textBasicColor={textBasicColor}

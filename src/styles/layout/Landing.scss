@@ -6,7 +6,6 @@
   width: 100%;
   padding: 20px;
   padding-top: 70px;
-  // background-image: url("../../images/cabeceramobile.png");
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -22,7 +21,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  @include desktop {
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
   &__name {
     font-family: $titles-font-family-regular;
     font-size: 70px;
@@ -138,12 +140,15 @@
     background-image: url("../../images/cabeceradesktop2.png");
   }
 }
-.smile {
-  &__face {
-    // border-radius: 50%;
-    padding: 3px;
-    background-color: yellow;
-    color: black;
-    transform: rotate(90deg);
-  }
-}
+// .smile {
+//   &__face {
+//     font-size: 50px;
+//     background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+//     background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+//     background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+//     -webkit-background-clip: text;
+//     -moz-background-clip: text;
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//   }
+// }

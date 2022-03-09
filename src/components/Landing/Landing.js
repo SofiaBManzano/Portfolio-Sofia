@@ -7,7 +7,7 @@ const WhoIAm = (props) => {
     <div className={`container ${props.backgroundImageHello}`}>
       <Hello borderText={props.borderText} />
       <Smile />
-      <Description paragraphColor={props.paragraphColor} />
+      <Description textBasicColor={props.textBasicColor} />
     </div>
   );
 };
