@@ -6,6 +6,13 @@ const EachWork = (props) => {
         <p className="selectedWorks__container--li description">
           {props.description}
         </p>
+        <div className={props.image}>
+          <a
+            className="selectedWorks__container--li img-container"
+            target="blank"
+            href={props.href}
+          />
+        </div>
         <a
           className="selectedWorks__container--li img-container"
           target="blank"

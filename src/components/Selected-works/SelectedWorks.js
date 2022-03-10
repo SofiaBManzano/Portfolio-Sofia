@@ -11,6 +11,7 @@ const SelectedWorks = (props) => {
       <h2 className="selectedWorks__title">selected works</h2>
       <ul className="selectedWorks__container">
         <EachWork
+          image="prueba"
           classRight="right"
           title="Anonymus Proxy"
           description="//This is my first Hello world, that is, my first responsive website and my first approach to web layout. Made entirely with HTML and Sass."
