@@ -95,7 +95,7 @@ const SelectedWorks = (props) => {
         </li>
         <li className="selectedWorks__container--li right">
           <h3 className="selectedWorks__container--li title">Super Pop!</h3>
-          <div>
+          <div className="container__hover">
             <p className="selectedWorks__container--li description">
               //Group project. Responsive interactive website for creating
               cards. Made with javascript, HTML, Sass, Local Storage.
