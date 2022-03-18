@@ -1,10 +1,9 @@
-import { FaSmile } from "react-icons/fa";
 const Smile = () => {
   return (
     <article className="smile">
-      <span className="smile__face">
-        <FaSmile />
-      </span>
+      <p className="smile__text">Press me to see</p>
+      <div className="smile__face"></div>
+      <p className="smile__text">my colored version</p>
     </article>
   );
 };

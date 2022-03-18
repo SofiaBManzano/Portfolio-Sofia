@@ -13,17 +13,6 @@ const EachWork = (props) => {
         >
           <div className={props.image + props.photoColor}></div>
         </a>
-        {/* <a
-          className="selectedWorks__container--li img-container"
-          target="blank"
-          href={props.href}
-        >
-          <img
-            className={`selectedWorks__container--li li__img--${props.photoColor}`}
-            src={props.img}
-            alt="anonymusProxy"
-          />
-        </a> */}
       </div>
     </li>
   );

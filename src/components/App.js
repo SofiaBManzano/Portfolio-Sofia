@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Footer from "./Footer/Footer";
 
 import "../styles/App.scss";
+import ControlledLottie from "./ControlledLottie";
 
 function App() {
   //STATES
@@ -69,7 +70,7 @@ function App() {
           textBasicColor={textBasicColor}
         />
       </header>
-
+      {/* <ControlledLottie /> */}
       <SelectedWorks photoColor={photoColor} />
 
       <AboutMe backgroundImageWhoIAm={backgroundImageWhoIAm} />
