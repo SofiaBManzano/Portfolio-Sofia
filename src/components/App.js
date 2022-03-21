@@ -1,15 +1,9 @@
 import { useState } from "react";
-
-import UnderConstruction from "./Header/UnderConstruction";
-import Nav from "./Header/Nav";
-import Landing from "./Landing/Landing";
-import SelectedWorks from "./Selected-works/SelectedWorks";
-import AboutMe from "./AboutMe";
-import Contact from "./Contact";
 import Footer from "./Footer/Footer";
-
 import "../styles/App.scss";
 import ControlledLottie from "./ControlledLottie";
+import Header from "./Header/Header";
+import Main from "./Main.js/Main";
 
 function App() {
   //STATES
@@ -26,6 +20,7 @@ function App() {
   const [backgroundImageHello, setBackgroundImageHello] = useState("");
   const [paragraphColor, setParagraphColor] = useState("");
   const [backgroundFooter, setBackgroundFooter] = useState("");
+  const [textSmiley, setTextSmiley] = useState("colored");
 
   const toggleMode = () => {
     if (backgroundToggle === "backgroundBlack") {
@@ -40,6 +35,7 @@ function App() {
       setParagraphColor("textColorWhite");
       setBackgroundFooter("backgroundBlack");
       setBackgroundImageWhoIAm("backgroundImageWhoIAm");
+      setTextSmiley("dark");
     } else {
       console.log("cambio a negro");
       setBackgroundToggle("backgroundBlack");
@@ -53,29 +49,26 @@ function App() {
       setParagraphColor("");
       setBackgroundFooter("");
       setBackgroundImageWhoIAm("");
+      setTextSmiley("colored");
     }
   };
   return (
     <div className={`body ${textBasicColor} ${backgroundToggle}`}>
-      <header>
-        <UnderConstruction />
-        <Nav
-          navShadow={navShadow}
-          textBasicColor={textBasicColor}
-          navGradient={navGradient}
-        />
-        <Landing
-          backgroundImageHello={backgroundImageHello}
-          borderText={borderText}
-          textBasicColor={textBasicColor}
-        />
-      </header>
-      {/* <ControlledLottie /> */}
-      <SelectedWorks photoColor={photoColor} />
+      {/* <header> */}
+      <Header
+        textSmiley={textSmiley}
+        navShadow={navShadow}
+        textBasicColor={textBasicColor}
+        backgroundImageHello={backgroundImageHello}
+        navGradient={navGradient}
+        borderText={borderText}
+        toggleMode={toggleMode}
+      />
+      <Main
+        photoColor={photoColor}
+        backgroundImageWhoIAm={backgroundImageWhoIAm}
+      />
 
-      <AboutMe backgroundImageWhoIAm={backgroundImageWhoIAm} />
-
-      <Contact />
       <Footer
         backgroundFooter={backgroundFooter}
         textBasicColor={textBasicColor}

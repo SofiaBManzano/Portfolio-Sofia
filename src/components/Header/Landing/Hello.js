@@ -1,6 +1,6 @@
 const Hello = (props) => {
   return (
-    <section className="me">
+    <article className="me">
       <h1 className="me__name">Hello</h1>
       <h2 className="me__name">
         I am{" "}
@@ -14,7 +14,7 @@ const Hello = (props) => {
           <li className="me__positions--job">Video editor</li>
         </ul>
       </div>
-    </section>
+    </article>
   );
 };
 export default Hello;
