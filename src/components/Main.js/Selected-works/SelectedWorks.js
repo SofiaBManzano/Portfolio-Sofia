@@ -1,8 +1,3 @@
-import anonymusProxy from "../../../images/anonymus-proxy.jpg";
-import harryPotter from "../../../images/harry-potter.jpg";
-import hangman from "../../../images/ahorcado.jpg";
-import otaku from "../../../images/otaku-search.jpg";
-import superPop from "../../../images/super-pop.jpg";
 import EachWork from "./EachWork";
 const SelectedWorks = (props) => {
   return (
