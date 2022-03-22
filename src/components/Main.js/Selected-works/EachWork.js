@@ -3,7 +3,9 @@ const EachWork = (props) => {
     <li className={`list ${props.classRight}`}>
       <h3 className="list__title">{props.title}</h3>
       <div className="list__container">
-        <p className="list__container--description">{props.description}</p>
+        <p className={`list__container--description ${props.classRight}`}>
+          {props.description}
+        </p>
         <a
           className="list__container--img-container"
           target="blank"
