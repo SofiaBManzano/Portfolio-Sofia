@@ -1,6 +1,6 @@
 const Contact = (props) => {
   return (
-    <section className={`contact ${props.backgroundImage}`} id="contact">
+    <section className="contact" id="contact">
       <p className="contact__text">
         If you think that a profile like mine can fit you,
       </p>

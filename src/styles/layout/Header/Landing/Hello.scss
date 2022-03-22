@@ -1,0 +1,72 @@
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include desktop {
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  &__name {
+    font-family: $titles-font-family-regular;
+    font-size: 70px;
+    line-height: 90px;
+    @include tablet {
+      padding-left: 50px;
+    }
+    @include desktop {
+      font-size: 90px;
+      padding-bottom: 30px;
+    }
+
+    &--myName {
+      font-family: $titles-font-family-regular;
+      color: transparent;
+      -webkit-text-stroke-width: 0.5px;
+      letter-spacing: 4px;
+      -webkit-text-stroke-color: $white;
+    }
+  }
+  &__containerJobs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    @include tablet {
+      justify-content: flex-end;
+      padding-right: 150px;
+    }
+    @include desktop {
+      justify-content: center;
+    }
+
+    &--icon {
+      font-size: 60px;
+      padding-right: 10px;
+      @include desktop {
+        font-size: 90px;
+      }
+    }
+  }
+  &__positions {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+
+    &--job {
+      line-height: 20px;
+      list-style: none;
+      font-family: $titles-font-family-regular;
+      font-size: 12px;
+      @include desktop {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+.borderText {
+  font-family: $titles-font-family-regular;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: 4px;
+  -webkit-text-stroke-color: $pinkColor;
+}

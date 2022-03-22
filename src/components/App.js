@@ -1,14 +1,9 @@
 import { useState } from "react";
-
-import UnderConstruction from "./Header/UnderConstruction";
-import Nav from "./Header/Nav";
-import Landing from "./Landing/Landing";
-import SelectedWorks from "./Selected-works/SelectedWorks";
-import AboutMe from "./AboutMe";
-import Contact from "./Contact";
 import Footer from "./Footer/Footer";
-
 import "../styles/App.scss";
+import ControlledLottie from "./ControlledLottie";
+import Header from "./Header/Header";
+import Main from "./Main.js/Main";
 
 function App() {
   //STATES
@@ -16,14 +11,16 @@ function App() {
   const [backgroundToggle, setBackgroundToggle] = useState("backgroundBlack");
   const [photoColor, setPhotoColor] = useState("bn");
   const [borderText, setBorderText] = useState("");
-  const [backgroundImage, setBackgroundImage] = useState("");
+  //who i am
+  const [backgroundImageWhoIAm, setBackgroundImageWhoIAm] = useState("");
   //manejadores del Nav
   const [navGradient, setNavGradient] = useState("navGradientDark");
   const [navShadow, setNavShadow] = useState("shadowOn");
-  //who i am
+  //landing
   const [backgroundImageHello, setBackgroundImageHello] = useState("");
   const [paragraphColor, setParagraphColor] = useState("");
   const [backgroundFooter, setBackgroundFooter] = useState("");
+  const [textSmiley, setTextSmiley] = useState("colored");
 
   const toggleMode = () => {
     if (backgroundToggle === "backgroundBlack") {
@@ -37,46 +34,44 @@ function App() {
       setBackgroundImageHello("backgroundImageHello");
       setParagraphColor("textColorWhite");
       setBackgroundFooter("backgroundBlack");
+      setBackgroundImageWhoIAm("backgroundImageWhoIAm");
+      setTextSmiley("dark");
     } else {
       console.log("cambio a negro");
       setBackgroundToggle("backgroundBlack");
       setPhotoColor("bn");
       setBorderText("");
-      setBackgroundImage("backgroundImage");
+      setBackgroundImageWhoIAm("");
       setNavGradient("navGradientDark");
       setTextBasicColor("textColorWhite");
       setNavShadow("shadowOn");
       setBackgroundImageHello("");
       setParagraphColor("");
       setBackgroundFooter("");
+      setBackgroundImageWhoIAm("");
+      setTextSmiley("colored");
     }
   };
   return (
     <div className={`body ${textBasicColor} ${backgroundToggle}`}>
-      <header>
-        <UnderConstruction />
-        <Nav
-          navShadow={navShadow}
-          textBasicColor={textBasicColor}
-          navGradient={navGradient}
-        />
-        <Landing
-          backgroundImageHello={backgroundImageHello}
-          borderText={borderText}
-          paragraphColor={paragraphColor}
-        />
-      </header>
+      <Header
+        textSmiley={textSmiley}
+        navShadow={navShadow}
+        textBasicColor={textBasicColor}
+        backgroundImageHello={backgroundImageHello}
+        navGradient={navGradient}
+        borderText={borderText}
+        toggleMode={toggleMode}
+      />
+      <Main
+        photoColor={photoColor}
+        backgroundImageWhoIAm={backgroundImageWhoIAm}
+      />
 
-      <SelectedWorks photoColor={photoColor} />
-
-      <AboutMe />
-
-      <Contact backgroundImage={backgroundImage} />
       <Footer
         backgroundFooter={backgroundFooter}
         textBasicColor={textBasicColor}
         paragraphColor={paragraphColor}
-        // handleClick={handleClick}
         toggleMode={toggleMode}
       />
     </div>

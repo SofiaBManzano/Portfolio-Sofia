@@ -1,0 +1,31 @@
+.selectedWorks {
+  padding: 20px;
+
+  &__title {
+    font-size: 50px;
+    font-family: $titles-font-family-regular;
+    @include tablet {
+      font-size: 70px;
+    }
+    @include desktop {
+      font-size: 70px;
+      padding-left: 80px;
+    }
+  }
+  &__container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include desktop {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+}
+.container__hover {
+  @include desktop {
+    background-color: blueviolet;
+    width: 50%;
+  }
+}

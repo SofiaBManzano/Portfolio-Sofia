@@ -1,0 +1,103 @@
+.list {
+  @include tablet {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @include desktop {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__title {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: $text-font;
+    font-size: 25px;
+    @include tablet {
+      padding-top: 60px;
+    }
+  }
+  &__container {
+    @include desktop {
+      width: 40%;
+    }
+
+    &--description {
+      font-family: $console-font;
+      letter-spacing: -0.5px;
+      font-size: 12px;
+      color: $gray;
+
+      @include tablet {
+        text-align: left;
+        font-size: 22px;
+      }
+      @include desktop {
+        width: 100%;
+        font-size: 20px;
+      }
+      &.right {
+        text-align: end;
+      }
+    }
+    &--img-container {
+      @include desktop {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+.img {
+  margin-top: 10px;
+  height: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include tablet {
+    height: 300px;
+    width: 100%;
+  }
+  @include desktop {
+    align-items: flex-end;
+    height: 200px;
+    width: 500px;
+  }
+  &.photoColor {
+    filter: saturate(85%);
+    @include desktop {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &.bn {
+    filter: contrast(160%) grayscale(100%);
+    @include desktop {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &.anonymus {
+    background-image: url("../../../images/anonymus-proxy.jpg");
+  }
+  &.harryPotter {
+    background-image: url("../../../images/harry-potter.jpg");
+  }
+  &.hangman {
+    background-image: url("../../../images/ahorcado.jpg");
+  }
+  &.otaku {
+    background-image: url("../../../images/otaku-search2.jpg");
+  }
+  &.superPop {
+    background-image: url("../../../images/super-pop.jpg");
+  }
+}
+.right {
+  @include desktop {
+    align-items: flex-end;
+  }
+}
