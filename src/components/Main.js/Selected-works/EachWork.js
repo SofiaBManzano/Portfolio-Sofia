@@ -1,13 +1,11 @@
 const EachWork = (props) => {
   return (
-    <li className={`selectedWorks__container--li ${props.classRight}`}>
-      <h3 className="selectedWorks__container--li title">{props.title}</h3>
-      <div>
-        <p className="selectedWorks__container--li description">
-          {props.description}
-        </p>
+    <li className={`list ${props.classRight}`}>
+      <h3 className="list__title">{props.title}</h3>
+      <div className="list__container">
+        <p className="list__container--description">{props.description}</p>
         <a
-          className="selectedWorks__container--li img-container"
+          className="list__container--img-container"
           target="blank"
           href={props.href}
         >

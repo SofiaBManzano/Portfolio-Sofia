@@ -12,6 +12,7 @@
 
 //Main
 @import "../styles/layout/Main/Selected-works.scss";
+@import "../styles/layout/Main/EachWork.scss";
 @import "../styles/layout/Main/AboutMe.scss";
 @import "../styles/layout/Main/Contact.scss";
 
@@ -36,7 +37,7 @@
 .backgroundBlack {
   // background-color: $black;
   background-image: url("../images/backgroundPrueba.png");
-  background-size: contain;
+  background-size: 100%;
 }
 .textColorDark {
   color: $grayText;

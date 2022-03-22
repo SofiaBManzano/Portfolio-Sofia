@@ -54,7 +54,6 @@ function App() {
   };
   return (
     <div className={`body ${textBasicColor} ${backgroundToggle}`}>
-      {/* <header> */}
       <Header
         textSmiley={textSmiley}
         navShadow={navShadow}
@@ -73,7 +72,6 @@ function App() {
         backgroundFooter={backgroundFooter}
         textBasicColor={textBasicColor}
         paragraphColor={paragraphColor}
-        // handleClick={handleClick}
         toggleMode={toggleMode}
       />
     </div>
