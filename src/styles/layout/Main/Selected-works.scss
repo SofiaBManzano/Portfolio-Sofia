@@ -1,6 +1,9 @@
 .selectedWorks {
   padding: 20px;
-
+  @include big-screen {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
   &__title {
     font-size: 50px;
     font-family: $titles-font-family-regular;

@@ -8,3 +8,8 @@
     @content;
   }
 }
+@mixin big-screen {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
