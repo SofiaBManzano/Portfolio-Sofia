@@ -1,16 +1,24 @@
 .contact {
   padding: 20px;
-  padding-bottom: 50px;
+  @include desktop {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @include big-screen {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
   &__text {
     font-family: $titles-font-family-regular;
     font-size: 40px;
 
     &--talk {
-      // text-align: center;
       font-family: $titles-font-family-regular;
       font-size: 52px;
-      padding-top: 30px;
-      // padding-bottom: 40px;
+      padding-top: 20px;
+
       .link {
         display: inline-block;
         color: $gray;
@@ -40,8 +48,3 @@
     }
   }
 }
-// .backgroundImage {
-//   background-image: url("../../images/border-bottom.png");
-//   background-size: contain;
-//   background-repeat: repeat-x;
-// }

@@ -1,8 +1,21 @@
 .aboutMe {
   padding: 20px;
-  @include tablet {
-    margin-left: 170px;
-    margin-right: 170px;
+  @include desktop {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @include big-screen {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  &__title {
+    font-size: 40px;
+    font-family: $titles-font-family-regular;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include tablet {
+      font-size: 70px;
+    }
   }
   &__container {
     display: flex;
@@ -10,16 +23,19 @@
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 20px;
+
     @include tablet {
       display: inline-block;
       justify-content: left;
+    }
+    @include desktop {
+      padding-top: 40px;
     }
     &--text {
       margin-top: 10px;
       font-family: $text-font;
       text-align: justify;
-      // line-height: 20px;
-      // background-color: rgba(32, 32, 32, 0.774);
+
       @include tablet {
         text-align: left;
       }
@@ -46,13 +62,6 @@
       }
     }
   }
-
-  &__title {
-    font-size: 25px;
-    font-family: $titles-font-family-regular;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
 }
 .backgroundImageWhoIAm {
   // background-color: $pinkColor;
@@ -66,10 +75,6 @@
   }
   @include desktop {
     background-size: contain;
-    // background-position: right;
     background-image: url("../../../images/pruebatabletflip.png");
   }
-  // span {
-  //   background-color: rgb(32, 32, 32);
-  // }
 }

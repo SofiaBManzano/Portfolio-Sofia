@@ -1,5 +1,9 @@
 .selectedWorks {
   padding: 20px;
+  @include desktop {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   @include big-screen {
     padding-left: 20%;
     padding-right: 20%;

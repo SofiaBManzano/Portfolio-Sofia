@@ -15,12 +15,18 @@
       justify-content: flex-end;
       padding-right: 50px;
     }
+    @include big-screen {
+      padding-right: 100px;
+    }
 
     &--title {
       margin: 10px;
       font-size: 15px;
       font-family: $titles-font-family-regular;
       color: white;
+      @include big-screen {
+        font-size: 18px;
+      }
       .shadowOn {
         text-shadow: 2px 0 0 $black;
       }
