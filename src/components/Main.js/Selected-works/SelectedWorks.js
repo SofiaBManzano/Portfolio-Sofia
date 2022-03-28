@@ -8,7 +8,7 @@ const SelectedWorks = (props) => {
         <EachWork
           image="img anonymus "
           classRight="right"
-          title="Anonymus Proxy"
+          title="Anonymous Proxy"
           description="//This is my first Hello world, that is, my first responsive website and my first approach to web layout. Made entirely with HTML and Sass."
           href="https://sofiabmanzano.github.io/Anonymus-proxy/"
           photoColor={props.photoColor}
