@@ -2,8 +2,8 @@ const EachWork = (props) => {
   return (
     <li className={`list ${props.classRight}`}>
       <h3 className="list__title">{props.title}</h3>
-      <div className="list__container">
-        <p className={`list__container--description ${props.classRight}`}>
+      <div className={`list__container ${props.classRight}`}>
+        <p className={`${props.classRight} list__container--description`}>
           {props.description}
         </p>
         <a

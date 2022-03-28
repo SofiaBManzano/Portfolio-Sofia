@@ -11,7 +11,7 @@
     justify-content: center;
   }
   @include desktop {
-    padding: 70px;
+    padding: 5%;
     justify-content: flex-end;
   }
   @include big-screen {

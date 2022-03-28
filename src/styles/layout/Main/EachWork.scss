@@ -1,8 +1,4 @@
 .list {
-  // @include tablet {
-  //   margin-left: 20px;
-  //   margin-right: 20px;
-  // }
   @include desktop {
     margin-bottom: 20px;
     display: flex;
@@ -35,20 +31,21 @@
         font-size: 22px;
       }
       @include desktop {
-        width: 100%;
+        // width: 100%;
         font-size: 20px;
-      }
-      &.right {
-        text-align: end;
       }
     }
     &--img-container {
       @include desktop {
         display: flex;
+        flex-direction: column;
         align-items: flex-end;
-        justify-content: end;
+        justify-content: center;
+
         width: fit-content;
-        background-color: brown;
+      }
+      @include big-screen {
+        align-items: center;
       }
     }
   }
@@ -102,9 +99,13 @@
 .right {
   @include desktop {
     display: flex;
-    width: 90%;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
-    background-color: beige;
+  }
+  &.list__container--description {
+    @include big-screen {
+      text-align: right;
+    }
   }
 }
