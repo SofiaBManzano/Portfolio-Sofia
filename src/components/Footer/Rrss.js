@@ -21,6 +21,16 @@ const Rrss = (props) => {
           >
             linkedin
           </a>
+        </li>{" "}
+        <li className="footer__rrss--li">
+          <a
+            className={`footer__rrss--li link ${props.textBasicColor}`}
+            href="https://vimeo.com/311440378"
+            target="_blank"
+            rel="noreferrer"
+          >
+            audiovisual reel
+          </a>
         </li>
         <li className="footer__rrss--li">
           <a
@@ -30,16 +40,6 @@ const Rrss = (props) => {
             rel="noreferrer"
           >
             instagram
-          </a>
-        </li>
-        <li className="footer__rrss--li">
-          <a
-            className={`footer__rrss--li link ${props.textBasicColor}`}
-            href="https://vimeo.com/311440378"
-            target="_blank"
-            rel="noreferrer"
-          >
-            reel
           </a>
         </li>
       </ul>
