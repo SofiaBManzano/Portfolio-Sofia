@@ -7,9 +7,12 @@
   &__text {
     font-family: $text-font;
     text-align: justify;
-    padding-bottom: 20px;
+
     @include tablet {
       text-align: left;
     }
+  }
+  &__container {
+    margin: 50px;
   }
 }

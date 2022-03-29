@@ -2,7 +2,7 @@ const Video = () => {
   return (
     <article className="video">
       <p className="video__text">
-        If you are still curious and want to gossip about what I was doing
+        If you are still curious and want to check out about what I was doing
         before reprogramming myself in front-end developer, here is my
         audiovisual reel
       </p>
