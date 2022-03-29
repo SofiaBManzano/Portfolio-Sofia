@@ -35,7 +35,10 @@
       font-family: $text-font;
       text-align: justify;
       @include tablet {
+        padding-top: 2px;
+        padding-bottom: 2px;
         text-align: left;
+        line-height: 25px;
       }
     }
 

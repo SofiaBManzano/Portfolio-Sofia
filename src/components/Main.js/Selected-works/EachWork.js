@@ -4,6 +4,7 @@ const EachWork = (props) => {
       aos={props.aos}
       data-aos={props.dataAos}
       data-aos-delay="70"
+      data-aos-duration="700"
       className={`list ${props.classRight}`}
     >
       <h3 className="list__title">{props.title}</h3>

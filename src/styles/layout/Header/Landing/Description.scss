@@ -16,6 +16,8 @@
   &__text {
     font-family: $console-font;
     font-size: 13px;
+    line-height: 25px;
+
     color: $gray;
     @include tablet {
       text-align: end;
