@@ -95,6 +95,9 @@
   &.superPop {
     background-image: url("../../../images/super-pop.jpg");
   }
+  &.random {
+    background-image: url("../../../images/random-pics.jpg");
+  }
 }
 .right {
   @include desktop {

@@ -49,6 +49,13 @@ const SelectedWorks = (props) => {
           href="https://sofiabmanzano.github.io/Super-Pop-/"
           photoColor={props.photoColor}
         />
+        <EachWork
+          image="img random "
+          title="Random Pics"
+          description="//Responsive web where through an API, it returns random images with their corresponding author. Made with React."
+          href="https://sofiabmanzano.github.io/Random-pics/"
+          photoColor={props.photoColor}
+        />
       </ul>
     </section>
   );
