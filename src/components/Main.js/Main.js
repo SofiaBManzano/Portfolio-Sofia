@@ -6,7 +6,10 @@ const Main = (props) => {
   return (
     <main>
       <SelectedWorks photoColor={props.photoColor} />
-      <AboutMe backgroundImageWhoIAm={props.backgroundImageWhoIAm} />
+      <AboutMe
+        photoColor={props.photoColor}
+        backgroundImageWhoIAm={props.backgroundImageWhoIAm}
+      />
       <Contact />
     </main>
   );

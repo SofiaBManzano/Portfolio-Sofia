@@ -1,0 +1,85 @@
+//transition
+.footerText {
+  position: relative;
+  display: block;
+}
+
+.footerText:before,
+.footerText:after {
+  @include desktop {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    top: 40%;
+    margin-top: -0.5px;
+    background: #fff;
+  }
+}
+
+.footerText:before {
+  @include desktop {
+    left: -2.5px;
+  }
+}
+.footerText:after {
+  @include desktop {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+}
+
+.footerText:hover:before {
+  @include desktop {
+    background: #fff;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+}
+
+.footerText:hover:after {
+  @include desktop {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+}
+//dark transition
+.footerText.textColorDark:before,
+.footerText.textColorDark:after {
+  @include desktop {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    top: 40%;
+    margin-top: -0.5px;
+    background: rgb(0, 0, 0);
+  }
+}
+
+.footerText.textColorDark:before {
+  @include desktop {
+    left: -2.5px;
+  }
+}
+.footerText.textColorDark:after {
+  @include desktop {
+    right: 2.5px;
+    background: rgb(0, 0, 0);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+}
+
+.footerText.textColorDark:hover:before {
+  background: rgb(0, 0, 0);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.footerText:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}

@@ -8,7 +8,7 @@ const Nav = (props) => {
             className={`nav__container--title link ${props.textBasicColor}`}
             href="#work"
           >
-            work
+            <span className={`navText ${props.textBasicColor}`}>work</span>
           </a>
         </li>
         <li className="nav__container--title">
@@ -16,7 +16,7 @@ const Nav = (props) => {
             className={`nav__container--title link ${props.textBasicColor}`}
             href="#contact"
           >
-            contact
+            <span className={`navText ${props.textBasicColor}`}>contact</span>
           </a>
         </li>
         <li className="nav__container--title">
@@ -24,7 +24,7 @@ const Nav = (props) => {
             className={`nav__container--title link ${props.textBasicColor}`}
             href="#aboutMe"
           >
-            about me
+            <span className={`navText ${props.textBasicColor}`}>about me</span>
           </a>
         </li>
       </ul>

@@ -3,7 +3,7 @@ const AboutMe = (props) => {
     <section className={`aboutMe ${props.backgroundImageWhoIAm}`} id="aboutMe">
       <h1 className="aboutMe__title">Who am I?</h1>
       <article className="aboutMe__container">
-        <div className="aboutMe__container--img"></div>
+        <div className={`aboutMe__container--img ${props.photoColor}`}></div>
         <p className="aboutMe__container--text one">
           I'm a junior front-end developer with an extense background in video
           editing and post-production. For 4 years I was working in a small
