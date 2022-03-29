@@ -8,6 +8,7 @@ const SelectedWorks = (props) => {
       <ul className="selectedWorks__container">
         <EachWork
           aos={props.aos}
+          dataAos="fade-left"
           image="img anonymus "
           classRight="right"
           title="Anonymous Proxy"
@@ -16,7 +17,9 @@ const SelectedWorks = (props) => {
           photoColor={props.photoColor}
         />
         <EachWork
+          aos={props.aos}
           image="img harryPotter "
+          dataAos="fade-right"
           title="Harry Potter Character Finder"
           description="//Responsive search engine for Harry Potter characters developed
           in React using an external API."
@@ -25,6 +28,8 @@ const SelectedWorks = (props) => {
         />
 
         <EachWork
+          aos={props.aos}
+          dataAos="fade-left"
           image="img hangman "
           classRight="right"
           title="Hangman Game"
@@ -34,6 +39,8 @@ const SelectedWorks = (props) => {
           photoColor={props.photoColor}
         />
         <EachWork
+          aos={props.aos}
+          dataAos="fade-right"
           image="img otaku "
           title="Otaku search"
           description="//Responsive anime series search engine developed in vanilla
@@ -43,6 +50,8 @@ const SelectedWorks = (props) => {
         />
 
         <EachWork
+          aos={props.aos}
+          dataAos="fade-left"
           image="img superPop "
           classRight="right"
           title="Super Pop!"
@@ -52,9 +61,11 @@ const SelectedWorks = (props) => {
           photoColor={props.photoColor}
         />
         <EachWork
+          aos={props.aos}
+          dataAos="fade-right"
           image="img random "
           title="Random Pics"
-          description="//Responsive web where through an API, it returns random images with their corresponding author. Made with React."
+          description="//Responsive web that displays random images with their corresponding author calling the picsum API. Made with React."
           href="https://sofiabmanzano.github.io/Random-pics/"
           photoColor={props.photoColor}
         />

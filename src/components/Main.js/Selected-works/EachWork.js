@@ -2,8 +2,8 @@ const EachWork = (props) => {
   return (
     <li
       aos={props.aos}
-      data-aos="fade-up"
-      data-aos-delay="100"
+      data-aos={props.dataAos}
+      data-aos-delay="70"
       className={`list ${props.classRight}`}
     >
       <h3 className="list__title">{props.title}</h3>
