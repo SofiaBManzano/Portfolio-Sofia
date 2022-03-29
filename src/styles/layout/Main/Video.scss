@@ -1,0 +1,15 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-family: $text-font;
+    text-align: justify;
+    padding-bottom: 20px;
+    @include tablet {
+      text-align: left;
+    }
+  }
+}

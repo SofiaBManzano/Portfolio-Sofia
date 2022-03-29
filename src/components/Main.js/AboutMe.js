@@ -1,3 +1,5 @@
+import Video from "./Video";
+
 const AboutMe = (props) => {
   return (
     <section className={`aboutMe ${props.backgroundImageWhoIAm}`} id="aboutMe">
@@ -42,6 +44,7 @@ const AboutMe = (props) => {
           bring my potential to its maximum in web development.
         </p>
       </article>
+      <Video />
     </section>
   );
 };

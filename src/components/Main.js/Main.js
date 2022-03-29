@@ -9,7 +9,7 @@ const Main = (props) => {
       <AboutMe
         photoColor={props.photoColor}
         backgroundImageWhoIAm={props.backgroundImageWhoIAm}
-      />
+      />{" "}
       <Contact />
     </main>
   );

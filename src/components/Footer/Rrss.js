@@ -14,11 +14,7 @@ const Rrss = (props) => {
           href="https://www.linkedin.com/in/sofiablas/"
           rrss="linkedin"
         />
-        <EachRrss
-          textBasicColor={props.textBasicColor}
-          href="https://vimeo.com/311440378"
-          rrss="audiovisual reel"
-        />
+
         <EachRrss
           textBasicColor={props.textBasicColor}
           href="https://www.instagram.com/sofiabmanzano/?hl=es"
