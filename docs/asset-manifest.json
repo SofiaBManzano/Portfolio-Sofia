@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.1155f374.css",
+    "main.css": "./static/css/main.16283329.css",
     "main.js": "./static/js/main.542e93e2.js",
     "static/media/pruebamobile.png": "./static/media/pruebamobile.70f10135d8f2fa8ad095.png",
     "static/media/cabeceradesktop2.png": "./static/media/cabeceradesktop2.4a6c09e6b76cc4bcbd85.png",
@@ -18,11 +18,11 @@
     "static/media/MonumentExtended-Regular.otf": "./static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
     "static/media/MonumentExtended-Ultrabold.otf": "./static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
     "index.html": "./index.html",
-    "main.1155f374.css.map": "./static/css/main.1155f374.css.map",
+    "main.16283329.css.map": "./static/css/main.16283329.css.map",
     "main.542e93e2.js.map": "./static/js/main.542e93e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1155f374.css",
+    "static/css/main.16283329.css",
     "static/js/main.542e93e2.js"
   ]
 }
