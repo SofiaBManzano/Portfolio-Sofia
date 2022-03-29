@@ -1,4 +1,5 @@
 import EachWork from "./EachWork";
+
 const SelectedWorks = (props) => {
   return (
     <section className="selectedWorks" id="work">
@@ -6,6 +7,7 @@ const SelectedWorks = (props) => {
       <h2 className="selectedWorks__title">selected works</h2>
       <ul className="selectedWorks__container">
         <EachWork
+          aos={props.aos}
           image="img anonymus "
           classRight="right"
           title="Anonymous Proxy"

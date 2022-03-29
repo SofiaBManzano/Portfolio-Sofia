@@ -9,6 +9,9 @@
     justify-content: space-between;
     &--li {
       font-size: 10px;
+      @include desktop {
+        font-size: 15px;
+      }
       .link {
         text-decoration: none;
       }

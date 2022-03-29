@@ -5,7 +5,7 @@ import SelectedWorks from "./Selected-works/SelectedWorks";
 const Main = (props) => {
   return (
     <main>
-      <SelectedWorks photoColor={props.photoColor} />
+      <SelectedWorks aos={props.aos} photoColor={props.photoColor} />
       <AboutMe
         photoColor={props.photoColor}
         backgroundImageWhoIAm={props.backgroundImageWhoIAm}

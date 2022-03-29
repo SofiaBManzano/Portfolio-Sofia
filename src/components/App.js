@@ -4,6 +4,8 @@ import "../styles/App.scss";
 import ControlledLottie from "./ControlledLottie";
 import Header from "./Header/Header";
 import Main from "./Main.js/Main";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   //STATES
@@ -52,6 +54,7 @@ function App() {
       setTextSmiley("colored");
     }
   };
+  const aos = AOS.init();
   return (
     <div className={`body ${textBasicColor} ${backgroundToggle}`}>
       <Header
@@ -64,6 +67,7 @@ function App() {
         toggleMode={toggleMode}
       />
       <Main
+        aos={aos}
         photoColor={photoColor}
         backgroundImageWhoIAm={backgroundImageWhoIAm}
       />
