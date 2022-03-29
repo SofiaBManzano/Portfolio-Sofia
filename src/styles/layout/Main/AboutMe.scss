@@ -59,7 +59,7 @@
         float: left;
       }
       &.photoColor {
-        filter: saturate(50%);
+        filter: saturate(70%);
         @include desktop {
           margin-left: 0;
         }
