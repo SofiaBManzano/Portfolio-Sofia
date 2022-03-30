@@ -26,7 +26,7 @@ function App() {
 
   const toggleMode = () => {
     if (backgroundToggle === "backgroundBlack") {
-      console.log("cambio a blanco");
+      // console.log("cambio a blanco");
       setBackgroundToggle("backgroundWhite");
       setPhotoColor("photoColor");
       setBorderText("borderText");
@@ -39,7 +39,7 @@ function App() {
       setBackgroundImageWhoIAm("backgroundImageWhoIAm");
       setTextSmiley("dark");
     } else {
-      console.log("cambio a negro");
+      // console.log("cambio a negro");
       setBackgroundToggle("backgroundBlack");
       setPhotoColor("bn");
       setBorderText("");
@@ -54,9 +54,7 @@ function App() {
       setTextSmiley("colored");
     }
   };
-  const aos = AOS.init({
-    once: true,
-  });
+  const aos = AOS.init();
   return (
     <div className={`body ${textBasicColor} ${backgroundToggle}`}>
       <Header
