@@ -7,7 +7,6 @@ const Main = (props) => {
     <main>
       <SelectedWorks aos={props.aos} photoColor={props.photoColor} />
       <AboutMe
-        aos={props.aos}
         photoColor={props.photoColor}
         backgroundImageWhoIAm={props.backgroundImageWhoIAm}
       />{" "}

@@ -2,15 +2,7 @@ import Video from "./Video";
 
 const AboutMe = (props) => {
   return (
-    <section
-      aos={props.aos}
-      data-aos="fade-up"
-      data-aos-delay="100"
-      data-aos-duration="700"
-      data-aos-once="false"
-      className={`aboutMe ${props.backgroundImageWhoIAm}`}
-      id="aboutMe"
-    >
+    <section className={`aboutMe ${props.backgroundImageWhoIAm}`} id="aboutMe">
       <h1 className="aboutMe__title">Who am I?</h1>
       <article className="aboutMe__container">
         <div className={`aboutMe__container--img ${props.photoColor}`}></div>
