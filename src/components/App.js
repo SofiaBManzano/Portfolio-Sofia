@@ -54,7 +54,9 @@ function App() {
       setTextSmiley("colored");
     }
   };
-  const aos = AOS.init();
+  const aos = AOS.init({
+    once: true,
+  });
   return (
     <div className={`body ${textBasicColor} ${backgroundToggle}`}>
       <Header
