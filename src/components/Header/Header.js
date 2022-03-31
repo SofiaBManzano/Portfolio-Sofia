@@ -4,7 +4,7 @@ import Landing from "./Landing/Landing";
 const Header = (props) => {
   return (
     <header>
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
       <Nav
         navShadow={props.navShadow}
         textBasicColor={props.textBasicColor}
