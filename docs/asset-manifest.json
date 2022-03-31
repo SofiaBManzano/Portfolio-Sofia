@@ -1,11 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.f82d664c.css",
-    "main.js": "./static/js/main.f9200fe4.js",
-    "static/media/pruebamobile.png": "./static/media/pruebamobile.70f10135d8f2fa8ad095.png",
+    "main.css": "./static/css/main.8a7c4cbe.css",
+    "main.js": "./static/js/main.4985f335.js",
     "static/media/cabeceradesktop2.png": "./static/media/cabeceradesktop2.4a6c09e6b76cc4bcbd85.png",
-    "static/media/pruebatabletflip.png": "./static/media/pruebatabletflip.1d3a8fdf3af24fb0ec44.png",
-    "static/media/pruebatablet.png": "./static/media/pruebatablet.7620a33e560060acb726.png",
     "static/media/cabeceramobile2.png": "./static/media/cabeceramobile2.e7d33ae3a51eb2f50be0.png",
     "static/media/sofia.jpg": "./static/media/sofia.cdb69e965a0125905d5d.jpg",
     "static/media/otaku-search2.jpg": "./static/media/otaku-search2.2bf194fb2369a9645c2c.jpg",
@@ -19,11 +16,11 @@
     "static/media/MonumentExtended-Regular.otf": "./static/media/MonumentExtended-Regular.db74f7a563ec017311bc.otf",
     "static/media/MonumentExtended-Ultrabold.otf": "./static/media/MonumentExtended-Ultrabold.9db16afed1996befff6b.otf",
     "index.html": "./index.html",
-    "main.f82d664c.css.map": "./static/css/main.f82d664c.css.map",
-    "main.f9200fe4.js.map": "./static/js/main.f9200fe4.js.map"
+    "main.8a7c4cbe.css.map": "./static/css/main.8a7c4cbe.css.map",
+    "main.4985f335.js.map": "./static/js/main.4985f335.js.map"
   },
   "entrypoints": [
-    "static/css/main.f82d664c.css",
-    "static/js/main.f9200fe4.js"
+    "static/css/main.8a7c4cbe.css",
+    "static/js/main.4985f335.js"
   ]
 }
