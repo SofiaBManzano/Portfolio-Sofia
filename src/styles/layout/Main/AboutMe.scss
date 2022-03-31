@@ -41,6 +41,38 @@
         line-height: 25px;
       }
     }
+    &--img-container {
+      position: relative;
+      margin-bottom: 3px;
+      &::before,
+      &::after {
+        content: "";
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        border: 2px solid $gray;
+        transition: all 0.25s ease-out;
+      }
+      &::before {
+        background-color: $gray;
+        top: 33px;
+        left: 33px;
+      }
+      &::after {
+        bottom: 33px;
+        right: 33px;
+      }
+      &:hover {
+        &::before {
+          top: 15px;
+          left: 15px;
+        }
+        &::after {
+          bottom: 15px;
+          right: 15px;
+        }
+      }
+    }
 
     &--img {
       // margin-right: 30px;
