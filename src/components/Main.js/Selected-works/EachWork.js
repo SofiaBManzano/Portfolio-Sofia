@@ -13,11 +13,16 @@ const EachWork = (props) => {
           {props.description}
         </p>
         <a
-          className="list__container--img-container"
+          className="list__container--img-container "
           target="blank"
           href={props.href}
         >
-          <div className={props.image + props.photoColor}></div>
+          <div className="c-list__content">
+            <img
+              className="c-list__content--img"
+              src="https://cdn.create-store.com/wk/img/core/ikh/editorial/fresh/fresh-1-v2-desktop.jpg?v=1655119912"
+            ></img>
+          </div>
         </a>
       </div>
     </li>

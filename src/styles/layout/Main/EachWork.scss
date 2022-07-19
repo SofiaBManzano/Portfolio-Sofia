@@ -80,24 +80,24 @@
       margin-right: 0;
     }
   }
-  &.anonymus {
-    background-image: url("../../../images/anonymus-proxy.jpg");
-  }
-  &.harryPotter {
-    background-image: url("../../../images/harry-potter.jpg");
-  }
-  &.hangman {
-    background-image: url("../../../images/ahorcado.jpg");
-  }
-  &.otaku {
-    background-image: url("../../../images/otaku-search2.jpg");
-  }
-  &.superPop {
-    background-image: url("../../../images/super-pop.jpg");
-  }
-  &.random {
-    background-image: url("../../../images/random-pics.jpg");
-  }
+  // &.anonymus {
+  //   background-image: url("../../../images/anonymus-proxy.jpg");
+  // }
+  // &.harryPotter {
+  //   background-image: url("../../../images/harry-potter.jpg");
+  // }
+  // &.hangman {
+  //   background-image: url("../../../images/ahorcado.jpg");
+  // }
+  // &.otaku {
+  //   background-image: url("../../../images/otaku-search2.jpg");
+  // }
+  // &.superPop {
+  //   background-image: url("../../../images/super-pop.jpg");
+  // }
+  // &.random {
+  //   background-image: url("../../../images/random-pics.jpg");
+  // }
 }
 .right {
   @include desktop {
@@ -111,4 +111,20 @@
       text-align: right;
     }
   }
+}
+.c-list__content{
+  position: relative;
+  height: 0;
+
+  padding-left: 20vw;
+  padding-bottom: 20vh;
+}
+.c-list__content--img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  height: 100%;
 }
